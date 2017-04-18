@@ -593,33 +593,26 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
-<wire x1="-5.08" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<pin name="1" x="0" y="5.08" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="0" y="-5.08" length="short" direction="pas" rot="R90"/>
-<text x="-7.62" y="2.54" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
-<text x="-7.62" y="-3.81" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
+<pin name="1" x="0" y="3.302" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="0" y="-3.302" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="1.778" y="2.032" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="1.778" y="-2.54" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="0.254" x2="1.905" y2="0.762" layer="94"/>
+<rectangle x1="-1.905" y1="-0.762" x2="1.905" y2="-0.254" layer="94"/>
 </symbol>
 <symbol name="RESISTOR">
-<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
-<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="-5.08" y="3.81" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="1.778" layer="95">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-3.81" y="1.524" size="1.778" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-2.794" size="1.778" layer="95" font="vector" ratio="10">&gt;VALUE</text>
+<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0.762" x2="-2.54" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.762" x2="2.54" y2="-0.762" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CAPACITOR">
+<deviceset name="CAPACITOR" prefix="C" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
@@ -653,12 +646,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR">
+<deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="R0402" package="RES-0402">
+<device name="0402" package="RES-0402">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -667,7 +660,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <technology name=""/>
 </technologies>
 </device>
-<device name="R0603" package="RES-0603">
+<device name="0603" package="RES-0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -676,7 +669,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <technology name=""/>
 </technologies>
 </device>
-<device name="R0805" package="RES-0805">
+<device name="0805" package="RES-0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -702,15 +695,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <part name="C1" library="EmbeddedAdventures 3" deviceset="CAP" device="0402-CAP"/>
 <part name="C2" library="EmbeddedAdventures 3" deviceset="CAP" device="0603-CAP"/>
 <part name="C3" library="EmbeddedAdventures 3" deviceset="CAP" device="0805"/>
-<part name="U$1" library="DR_passives" deviceset="CAPACITOR" device="0402"/>
-<part name="U$2" library="DR_passives" deviceset="CAPACITOR" device="0603"/>
-<part name="U$3" library="DR_passives" deviceset="CAPACITOR" device="0805"/>
 <part name="R1" library="EmbeddedAdventures 3" deviceset="RESISTOR" device="0402-RES"/>
 <part name="R2" library="EmbeddedAdventures 3" deviceset="RESISTOR" device="0603-RES"/>
 <part name="R3" library="EmbeddedAdventures 3" deviceset="RESISTOR" device=""/>
-<part name="U$4" library="DR_passives" deviceset="RESISTOR" device="R0402"/>
-<part name="U$5" library="DR_passives" deviceset="RESISTOR" device="R0603"/>
-<part name="U$6" library="DR_passives" deviceset="RESISTOR" device="R0805"/>
+<part name="R4" library="DR_passives" deviceset="RESISTOR" device="0402"/>
+<part name="R5" library="DR_passives" deviceset="RESISTOR" device="0603"/>
+<part name="R6" library="DR_passives" deviceset="RESISTOR" device="0805"/>
+<part name="C6" library="DR_passives" deviceset="CAPACITOR" device="0402"/>
+<part name="C7" library="DR_passives" deviceset="CAPACITOR" device="0603"/>
+<part name="C8" library="DR_passives" deviceset="CAPACITOR" device="0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -720,15 +713,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <instance part="C1" gate="G$1" x="0" y="15.24"/>
 <instance part="C2" gate="G$1" x="7.62" y="15.24"/>
 <instance part="C3" gate="G$1" x="15.24" y="15.24"/>
-<instance part="U$1" gate="G$1" x="0" y="0"/>
-<instance part="U$2" gate="G$1" x="17.78" y="0"/>
-<instance part="U$3" gate="G$1" x="35.56" y="0"/>
 <instance part="R1" gate="G$1" x="-2.54" y="-17.78"/>
 <instance part="R2" gate="G$1" x="15.24" y="-17.78"/>
 <instance part="R3" gate="G$1" x="33.02" y="-17.78"/>
-<instance part="U$4" gate="G$1" x="-2.54" y="-30.48"/>
-<instance part="U$5" gate="G$1" x="20.32" y="-30.48"/>
-<instance part="U$6" gate="G$1" x="43.18" y="-30.48"/>
+<instance part="R4" gate="G$1" x="-2.54" y="-38.1"/>
+<instance part="R5" gate="G$1" x="20.32" y="-38.1"/>
+<instance part="R6" gate="G$1" x="43.18" y="-38.1"/>
+<instance part="C6" gate="G$1" x="0" y="-2.54"/>
+<instance part="C7" gate="G$1" x="7.62" y="-2.54"/>
+<instance part="C8" gate="G$1" x="15.24" y="-2.54"/>
 </instances>
 <busses>
 </busses>

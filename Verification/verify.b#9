@@ -223,8 +223,8 @@ chip</description>
 <package name="CAP-0402">
 <wire x1="-0.7" y1="0.35" x2="0.7" y2="0.35" width="0.05" layer="48"/>
 <wire x1="-0.7" y1="0.35" x2="-0.7" y2="-0.35" width="0.05" layer="48"/>
-<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.8" layer="1"/>
-<smd name="2" x="0.5" y="0" dx="0.6" dy="0.8" layer="1"/>
+<smd name="1" x="-0.7" y="0" dx="0.6" dy="0.8" layer="1"/>
+<smd name="2" x="0.7" y="0" dx="0.6" dy="0.8" layer="1"/>
 <wire x1="0" y1="0.4" x2="0" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="-0.7" y1="-0.35" x2="0.7" y2="-0.35" width="0.05" layer="48"/>
 <wire x1="0.7" y1="0.35" x2="0.7" y2="-0.35" width="0.05" layer="48"/>
@@ -234,37 +234,24 @@ chip</description>
 <package name="CAP-0603">
 <smd name="1" x="-0.889" y="0" dx="1" dy="1" layer="1"/>
 <smd name="2" x="0.889" y="0" dx="1" dy="1" layer="1"/>
-<text x="-1.5" y="0.75" size="0.5" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-1.55" y="-1.2" size="0.5" layer="25" font="vector" ratio="10">&gt;VALUE</text>
+<text x="-1.25" y="0.65" size="0.5" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-1.25" y="-1.15" size="0.5" layer="25" font="vector" ratio="10">&gt;VALUE</text>
 <wire x1="-0.7" y1="0.4" x2="0.7" y2="0.4" width="0.05" layer="48"/>
 <wire x1="0.7" y1="0.4" x2="0.7" y2="-0.4" width="0.05" layer="48"/>
 <wire x1="0.7" y1="-0.4" x2="-0.7" y2="-0.4" width="0.05" layer="48"/>
 <wire x1="-0.7" y1="-0.4" x2="-0.7" y2="0.4" width="0.05" layer="48"/>
 <rectangle x1="-0.3175" y1="-0.3175" x2="0.3175" y2="0.3175" layer="21"/>
-<wire x1="-1.55" y1="0.7" x2="1.55" y2="0.7" width="0.05" layer="39"/>
-<wire x1="1.55" y1="0.7" x2="1.55" y2="-0.7" width="0.05" layer="39"/>
-<wire x1="1.55" y1="-0.7" x2="-1.55" y2="-0.7" width="0.05" layer="39"/>
-<wire x1="-1.55" y1="-0.7" x2="-1.55" y2="0.7" width="0.05" layer="39"/>
-<wire x1="-1.55" y1="0.65" x2="1.55" y2="0.65" width="0.07" layer="21"/>
-<wire x1="1.55" y1="0.65" x2="1.55" y2="-0.65" width="0.07" layer="21"/>
-<wire x1="1.55" y1="-0.65" x2="-1.55" y2="-0.65" width="0.07" layer="21"/>
-<wire x1="-1.55" y1="-0.65" x2="-1.55" y2="0.65" width="0.07" layer="21"/>
 </package>
 <package name="CAP-0805">
-<smd name="1" x="-0.95" y="0" dx="1.05" dy="1.3" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.05" dy="1.3" layer="1"/>
-<wire x1="-1.65" y1="0.8" x2="1.65" y2="0.8" width="0.07" layer="21"/>
-<wire x1="1.65" y1="0.8" x2="1.65" y2="-0.8" width="0.07" layer="21"/>
-<wire x1="1.65" y1="-0.8" x2="-1.65" y2="-0.8" width="0.07" layer="21"/>
-<wire x1="-1.65" y1="-0.8" x2="-1.65" y2="0.8" width="0.07" layer="21"/>
+<smd name="1" x="-0.95" y="0" dx="1.2" dy="1.2" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.2" dy="1.2" layer="1"/>
+<wire x1="-1.75" y1="0.75" x2="1.75" y2="0.75" width="0.05" layer="21"/>
+<wire x1="1.75" y1="0.75" x2="1.75" y2="-0.75" width="0.05" layer="21"/>
+<wire x1="1.75" y1="-0.75" x2="-1.75" y2="-0.75" width="0.05" layer="21"/>
+<wire x1="-1.75" y1="-0.75" x2="-1.75" y2="0.75" width="0.05" layer="21"/>
+<wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.05" layer="21"/>
 <text x="-1.75" y="1" size="0.5" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="-1.75" y="-1.5" size="0.5" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<wire x1="-0.3" y1="0.5" x2="0.3" y2="0.5" width="0.1" layer="21"/>
-<wire x1="-0.3" y1="-0.5" x2="0.3" y2="-0.5" width="0.1" layer="21"/>
-<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.05" layer="48"/>
-<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.05" layer="48"/>
-<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.05" layer="48"/>
-<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.05" layer="48"/>
 </package>
 <package name="RES-0402">
 <wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.05" layer="48"/>
@@ -276,6 +263,41 @@ chip</description>
 <text x="-0.8" y="0.5" size="0.3" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="-0.8" y="-0.8" size="0.3" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.1" y1="-0.2" x2="0.1" y2="0.2" layer="21"/>
+</package>
+<package name="RES-0603">
+<wire x1="-0.775" y1="0.425" x2="0.775" y2="0.425" width="0.05" layer="48"/>
+<wire x1="-0.775" y1="0.425" x2="-0.775" y2="-0.425" width="0.05" layer="48"/>
+<wire x1="-0.775" y1="-0.425" x2="0.775" y2="-0.425" width="0.05" layer="48"/>
+<wire x1="0.775" y1="0.425" x2="0.775" y2="-0.425" width="0.05" layer="48"/>
+<smd name="1" x="-0.7875" y="0" dx="0.965" dy="0.965" layer="1" rot="R90"/>
+<smd name="2" x="0.7875" y="0" dx="0.965" dy="0.965" layer="1" rot="R90"/>
+<wire x1="-1.4" y1="0.6" x2="1.4" y2="0.6" width="0.05" layer="21"/>
+<wire x1="1.4" y1="0.6" x2="1.4" y2="-0.6" width="0.05" layer="21"/>
+<wire x1="1.4" y1="-0.6" x2="-1.4" y2="-0.6" width="0.05" layer="21"/>
+<wire x1="-1.4" y1="-0.6" x2="-1.4" y2="0.6" width="0.05" layer="21"/>
+<text x="-0.95" y="0.7" size="0.3" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-0.95" y="-1" size="0.3" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<wire x1="-1.5" y1="0.7" x2="1.5" y2="0.7" width="0.075" layer="39"/>
+<wire x1="1.5" y1="0.7" x2="1.5" y2="-0.7" width="0.075" layer="39"/>
+<wire x1="1.5" y1="-0.7" x2="-1.5" y2="-0.7" width="0.075" layer="39"/>
+<wire x1="-1.5" y1="-0.7" x2="-1.5" y2="0.7" width="0.075" layer="39"/>
+<rectangle x1="-0.2" y1="-0.5" x2="0.2" y2="0.5" layer="21"/>
+</package>
+<package name="RES-0805">
+<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.05" layer="48"/>
+<wire x1="-1" y1="-0.6" x2="1" y2="-0.6" width="0.05" layer="48"/>
+<wire x1="-1" y1="0.6" x2="-1" y2="-0.6" width="0.05" layer="48"/>
+<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.05" layer="48"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="0.9" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="0.9" layer="1" rot="R90"/>
+<wire x1="-1.6" y1="0.85" x2="1.6" y2="0.85" width="0.1" layer="21"/>
+<wire x1="1.6" y1="0.85" x2="1.6" y2="-0.85" width="0.1" layer="21"/>
+<wire x1="1.6" y1="-0.85" x2="-1.6" y2="-0.85" width="0.1" layer="21"/>
+<wire x1="-1.6" y1="-0.85" x2="-1.6" y2="0.85" width="0.1" layer="21"/>
+<wire x1="-0.3" y1="0.5" x2="0.3" y2="0.5" width="0.127" layer="21"/>
+<text x="-1.5" y="0.95" size="0.3" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-1.6" y="-1.25" size="0.3" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<wire x1="-0.3" y1="-0.5" x2="0.3" y2="-0.5" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -471,15 +493,15 @@ design rules under a new name.</description>
 <element name="C1" library="EmbeddedAdventures 3" package="0402-CAP" value="" x="3.81" y="20.32"/>
 <element name="C2" library="EmbeddedAdventures 3" package="0603-CAP" value="" x="12.7" y="20.32"/>
 <element name="C3" library="EmbeddedAdventures 3" package="0805" value="" x="22.86" y="20.32"/>
-<element name="U$1" library="DR_passives" package="CAP-0402" value="CAPACITOR0402" x="3.81" y="19.05"/>
+<element name="U$1" library="DR_passives" package="CAP-0402" value="CAPACITOR0402" x="3.81" y="17.78"/>
 <element name="U$2" library="DR_passives" package="CAP-0603" value="CAPACITOR0603" x="12.7" y="17.78"/>
 <element name="U$3" library="DR_passives" package="CAP-0805" value="CAPACITOR0805" x="22.86" y="17.78"/>
 <element name="R1" library="EmbeddedAdventures 3" package="0402-RES" value="" x="3.81" y="13.97"/>
 <element name="R2" library="EmbeddedAdventures 3" package="0603-RES" value="" x="12.7" y="13.97"/>
 <element name="R3" library="EmbeddedAdventures 3" package="0805" value="" x="22.86" y="13.97"/>
-<element name="U$4" library="DR_passives" package="RES-0402" value="RESISTOR0402" x="3.81" y="11.43"/>
-<element name="U$5" library="DR_passives" package="RES-0402" value="RESISTOR0402" x="12.7" y="11.43"/>
-<element name="U$6" library="DR_passives" package="RES-0402" value="RESISTOR0402" x="22.86" y="11.43"/>
+<element name="U$4" library="DR_passives" package="RES-0402" value="RESISTORR0402" x="3.81" y="11.43"/>
+<element name="U$5" library="DR_passives" package="RES-0603" value="RESISTORR0603" x="12.7" y="11.43"/>
+<element name="U$6" library="DR_passives" package="RES-0805" value="RESISTORR0805" x="22.86" y="11.43"/>
 </elements>
 <signals>
 </signals>

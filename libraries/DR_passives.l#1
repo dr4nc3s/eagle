@@ -164,7 +164,7 @@
 <symbol name="CAPACITOR">
 <pin name="1" x="0" y="3.302" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="2" x="0" y="-3.302" visible="off" length="short" direction="pas" rot="R90"/>
-<text x="1.778" y="2.032" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="1.778" y="1.016" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
 <text x="1.778" y="-2.54" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.905" y1="0.254" x2="1.905" y2="0.762" layer="94"/>
 <rectangle x1="-1.905" y1="-0.762" x2="1.905" y2="-0.254" layer="94"/>
