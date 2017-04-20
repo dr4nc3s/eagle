@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -777,6 +777,20 @@ A3216/EIA3216</description>
 <wire x1="-12.065" y1="-7.62" x2="-12.065" y2="20.32" width="0.508" layer="21"/>
 <circle x="8.89" y="0" radius="0.635" width="0.508" layer="21"/>
 </package>
+<package name="SOT-223-4">
+<smd name="PAD" x="0" y="2.9" dx="3.25" dy="2.15" layer="1"/>
+<smd name="1" x="-2.3" y="-2.9" dx="0.95" dy="2.15" layer="1"/>
+<smd name="2" x="0" y="-2.9" dx="0.95" dy="2.15" layer="1"/>
+<smd name="3" x="2.3" y="-2.9" dx="0.95" dy="2.15" layer="1"/>
+<wire x1="-3.35" y1="1.85" x2="3.35" y2="1.85" width="0.08" layer="48"/>
+<wire x1="-3.35" y1="1.85" x2="-3.35" y2="-1.85" width="0.08" layer="48"/>
+<wire x1="-3.35" y1="-1.85" x2="3.35" y2="-1.85" width="0.08" layer="48"/>
+<wire x1="3.35" y1="1.85" x2="3.35" y2="-1.85" width="0.08" layer="48"/>
+<wire x1="-3.1" y1="1.6" x2="-3.1" y2="-1.6" width="0.1" layer="21"/>
+<wire x1="-3.1" y1="-1.6" x2="3.1" y2="-1.6" width="0.1" layer="21"/>
+<wire x1="3.1" y1="-1.6" x2="3.1" y2="1.6" width="0.1" layer="21"/>
+<wire x1="3.1" y1="1.6" x2="-3.1" y2="1.6" width="0.1" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SLHT5">
@@ -792,20 +806,19 @@ A3216/EIA3216</description>
 <text x="-5.08" y="-9.144" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="LMP7721">
-<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="V+" x="-7.62" y="5.08" length="short" direction="pwr"/>
-<pin name="I+" x="-7.62" y="2.54" length="short" direction="in"/>
-<pin name="I-" x="-7.62" y="0" length="short" direction="in"/>
-<pin name="V-" x="-7.62" y="-5.08" length="short" direction="pwr"/>
-<pin name="VOUT" x="7.62" y="-2.54" length="short" direction="out" rot="R180"/>
-<circle x="-5.588" y="0" radius="0.359209375" width="0.127" layer="94"/>
-<text x="-5.08" y="7.874" size="1.27" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-9.144" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="V+" x="0" y="7.62" visible="pin" length="short" direction="pwr" rot="R270"/>
+<pin name="I+" x="-7.62" y="2.54" visible="pin" length="short" direction="in"/>
+<pin name="I-" x="-7.62" y="-2.54" visible="pin" length="short" direction="in" function="dot"/>
+<pin name="V-" x="0" y="-7.62" visible="pin" length="short" direction="pwr" rot="R90"/>
+<pin name="OUT" x="7.62" y="0" visible="pin" length="short" direction="out" rot="R180"/>
+<text x="-7.62" y="5.334" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-6.604" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="SAMD21J">
+<symbol name="SAM-D21-J">
 <pin name="PA00" x="-25.4" y="22.86" length="middle"/>
 <pin name="PA01" x="-25.4" y="20.32" length="middle"/>
 <pin name="PA02" x="-25.4" y="17.78" length="middle"/>
@@ -877,7 +890,7 @@ A3216/EIA3216</description>
 <text x="-20.066" y="41.656" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
 <text x="-20.32" y="-45.72" size="1.27" layer="95" font="vector" ratio="10">&gt;VALUE</text>
 </symbol>
-<symbol name="SAMD21G">
+<symbol name="SAM-D21-G">
 <pin name="PA00" x="-25.4" y="12.7" length="middle"/>
 <pin name="PA01" x="-25.4" y="10.16" length="middle"/>
 <pin name="PA02" x="-25.4" y="7.62" length="middle"/>
@@ -933,7 +946,7 @@ A3216/EIA3216</description>
 <text x="-20.066" y="36.576" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
 <text x="-20.32" y="-35.56" size="1.27" layer="95" font="vector" ratio="10">&gt;VALUE</text>
 </symbol>
-<symbol name="SAMD21E">
+<symbol name="SAM-D21-E">
 <pin name="PA00" x="-25.4" y="7.62" length="middle"/>
 <pin name="PA01" x="-25.4" y="5.08" length="middle"/>
 <pin name="PA02" x="-25.4" y="2.54" length="middle"/>
@@ -1089,9 +1102,177 @@ A3216/EIA3216</description>
 <pin name="A1/IO1/SPI_ATTN" x="-22.86" y="7.62" length="short"/>
 <pin name="A0/IO0/CB" x="22.86" y="20.32" length="short" rot="R180"/>
 </symbol>
+<symbol name="SAM-L21-J">
+<pin name="PA00" x="-25.4" y="22.86" length="middle"/>
+<pin name="PA01" x="-25.4" y="20.32" length="middle"/>
+<pin name="PA02" x="-25.4" y="17.78" length="middle"/>
+<pin name="PA03" x="-25.4" y="15.24" length="middle"/>
+<pin name="PA04" x="-25.4" y="12.7" length="middle"/>
+<pin name="PA05" x="-25.4" y="10.16" length="middle"/>
+<pin name="PA06" x="-25.4" y="7.62" length="middle"/>
+<pin name="PA07" x="-25.4" y="5.08" length="middle"/>
+<pin name="PA08" x="-25.4" y="-22.86" length="middle"/>
+<pin name="PA09" x="-25.4" y="-25.4" length="middle"/>
+<pin name="PA10" x="-25.4" y="-27.94" length="middle"/>
+<pin name="PA11" x="-25.4" y="-30.48" length="middle"/>
+<pin name="PA12" x="-25.4" y="-33.02" length="middle"/>
+<pin name="PA13" x="-25.4" y="-35.56" length="middle"/>
+<pin name="PA14/XIN" x="-25.4" y="-15.24" length="middle"/>
+<pin name="PA15/XOUT" x="-25.4" y="-17.78" length="middle"/>
+<pin name="PA16" x="-25.4" y="-38.1" length="middle"/>
+<pin name="PA17" x="25.4" y="30.48" length="middle" rot="R180"/>
+<pin name="PA18" x="25.4" y="27.94" length="middle" rot="R180"/>
+<pin name="PA19" x="25.4" y="25.4" length="middle" rot="R180"/>
+<pin name="PA20" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="PA21" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="PA22" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="PA23" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="PA24" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="PA25" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="PA27" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="VSW" x="25.4" y="35.56" length="middle" rot="R180"/>
+<pin name="PA30" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="PA31" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PB00" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="PB01" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PB02" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="PB03" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="PB04" x="-25.4" y="2.54" length="middle"/>
+<pin name="PB05" x="-25.4" y="0" length="middle"/>
+<pin name="PB06" x="-25.4" y="-2.54" length="middle"/>
+<pin name="PB07" x="-25.4" y="-5.08" length="middle"/>
+<pin name="PB08" x="-25.4" y="-7.62" length="middle"/>
+<pin name="PB09" x="-25.4" y="-10.16" length="middle"/>
+<pin name="PB10" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="PB11" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="PB12" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="PB13" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="PB14" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB15" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="PB16" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB17" x="25.4" y="-27.94" length="middle" rot="R180"/>
+<pin name="PB22" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="PB23" x="25.4" y="-33.02" length="middle" rot="R180"/>
+<pin name="PB30" x="25.4" y="-35.56" length="middle" rot="R180"/>
+<pin name="PB31" x="25.4" y="-38.1" length="middle" rot="R180"/>
+<pin name="VDDIO@48" x="10.16" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDDIN" x="-7.62" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDDIO@34" x="7.62" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDDIO@21" x="5.08" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDDANA" x="-25.4" y="30.48" length="middle" direction="pwr"/>
+<pin name="RESET" x="-25.4" y="35.56" length="middle"/>
+<pin name="GNDANA" x="-25.4" y="27.94" length="middle" direction="pwr"/>
+<pin name="GND@22" x="-5.08" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@33" x="-2.54" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@47" x="0" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@54" x="2.54" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="VDDCORE" x="-5.08" y="45.72" length="middle" direction="out" rot="R270"/>
+<wire x1="-20.32" y1="40.64" x2="20.32" y2="40.64" width="0.254" layer="94"/>
+<wire x1="20.32" y1="40.64" x2="20.32" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-43.18" x2="-20.32" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-43.18" x2="-20.32" y2="40.64" width="0.254" layer="94"/>
+<text x="-20.066" y="41.656" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="-20.32" y="-45.72" size="1.27" layer="95" font="vector" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="SAM-L21-G">
+<pin name="PA00" x="-25.4" y="12.7" length="middle"/>
+<pin name="PA01" x="-25.4" y="10.16" length="middle"/>
+<pin name="PA02" x="-25.4" y="7.62" length="middle"/>
+<pin name="PA03" x="-25.4" y="5.08" length="middle"/>
+<pin name="PA04" x="-25.4" y="2.54" length="middle"/>
+<pin name="PA05" x="-25.4" y="0" length="middle"/>
+<pin name="PA06" x="-25.4" y="-2.54" length="middle"/>
+<pin name="PA07" x="-25.4" y="-5.08" length="middle"/>
+<pin name="PA08" x="-25.4" y="-22.86" length="middle"/>
+<pin name="PA09" x="-25.4" y="-25.4" length="middle"/>
+<pin name="PA10" x="-25.4" y="-27.94" length="middle"/>
+<pin name="PA11" x="-25.4" y="-30.48" length="middle"/>
+<pin name="PA12" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="PA13" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="PA14/XIN" x="-25.4" y="-15.24" length="middle"/>
+<pin name="PA15/XOUT" x="-25.4" y="-17.78" length="middle"/>
+<pin name="PA16" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="PA17" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="PA18" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="PA19" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="PA20" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="PA21" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="PA22" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PA23" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="PA24" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PA25" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="PA27" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="VSW" x="25.4" y="27.94" length="middle" rot="R180"/>
+<pin name="PA30" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="PA31" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="PB02" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="PB03" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="PB08" x="-25.4" y="-7.62" length="middle"/>
+<pin name="PB09" x="-25.4" y="-10.16" length="middle"/>
+<pin name="PB10" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB11" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="PB22" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB23" x="25.4" y="-27.94" length="middle" rot="R180"/>
+<pin name="VDDIN" x="-25.4" y="33.02" length="middle" direction="pwr"/>
+<pin name="VDDIO@36" x="25.4" y="30.48" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDDIO@17" x="25.4" y="33.02" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDDANA" x="-25.4" y="20.32" length="middle" direction="pwr"/>
+<pin name="RESET" x="-25.4" y="25.4" length="middle"/>
+<pin name="GNDANA" x="-25.4" y="17.78" length="middle" direction="pwr"/>
+<pin name="GND@18" x="-2.54" y="-38.1" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@35" x="0" y="-38.1" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@42" x="2.54" y="-38.1" length="middle" direction="pwr" rot="R90"/>
+<pin name="VDDCORE" x="-25.4" y="30.48" length="middle" direction="out"/>
+<wire x1="-20.32" y1="35.56" x2="20.32" y2="35.56" width="0.254" layer="94"/>
+<wire x1="20.32" y1="35.56" x2="20.32" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-33.02" x2="-20.32" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-33.02" x2="-20.32" y2="35.56" width="0.254" layer="94"/>
+<text x="-20.066" y="36.576" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="-20.32" y="-35.56" size="1.27" layer="95" font="vector" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="SAM-L21-E">
+<pin name="PA00" x="-25.4" y="7.62" length="middle"/>
+<pin name="PA01" x="-25.4" y="5.08" length="middle"/>
+<pin name="PA02" x="-25.4" y="2.54" length="middle"/>
+<pin name="PA03" x="-25.4" y="0" length="middle"/>
+<pin name="PA04" x="-25.4" y="-2.54" length="middle"/>
+<pin name="PA05" x="-25.4" y="-5.08" length="middle"/>
+<pin name="PA06" x="-25.4" y="-7.62" length="middle"/>
+<pin name="PA07" x="-25.4" y="-10.16" length="middle"/>
+<pin name="PA08" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="PA09" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="PA10" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="PA11" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="PA14/XIN" x="-25.4" y="-15.24" length="middle"/>
+<pin name="PA15/XOUT" x="-25.4" y="-17.78" length="middle"/>
+<pin name="PA16" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="PA17" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="PA18" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PA19" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="PA22" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PA23" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="PA24" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="PA25" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="PA27" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="VSW" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="PA30" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="PA31" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="VDDIN" x="-25.4" y="17.78" length="middle" direction="pwr"/>
+<pin name="VDDANA" x="-25.4" y="12.7" length="middle" direction="pwr"/>
+<pin name="RESET" x="-25.4" y="22.86" length="middle"/>
+<pin name="GND@10" x="-2.54" y="-27.94" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@28" x="0" y="-27.94" length="middle" direction="pwr" rot="R90"/>
+<pin name="VDDCORE" x="-25.4" y="20.32" length="middle" direction="out"/>
+<wire x1="-20.32" y1="25.4" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="-20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-22.86" x2="-20.32" y2="25.4" width="0.254" layer="94"/>
+<text x="-20.066" y="26.416" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="-20.32" y="-25.4" size="1.27" layer="95" font="vector" ratio="10">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="XBEE_S2C_PTH">
+<deviceset name="XBEE_S2C_PTH" prefix="U">
 <gates>
 <gate name="G$1" symbol="XBEE_S2C_PTH" x="-2.54" y="-10.16"/>
 </gates>
@@ -1125,7 +1306,7 @@ A3216/EIA3216</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="XBEE_S2C_SMD">
+<deviceset name="XBEE_S2C_SMD" prefix="U">
 <gates>
 <gate name="G$1" symbol="XBEE_S2C_SMD" x="0" y="0"/>
 </gates>
@@ -1176,7 +1357,7 @@ A3216/EIA3216</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LMP7721">
+<deviceset name="LMP7721" prefix="U">
 <gates>
 <gate name="G$1" symbol="LMP7721" x="0" y="0"/>
 </gates>
@@ -1185,9 +1366,9 @@ A3216/EIA3216</description>
 <connects>
 <connect gate="G$1" pin="I+" pad="1"/>
 <connect gate="G$1" pin="I-" pad="8"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
 <connect gate="G$1" pin="V+" pad="6"/>
 <connect gate="G$1" pin="V-" pad="3"/>
-<connect gate="G$1" pin="VOUT" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1350,11 +1531,11 @@ A3216/EIA3216</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATSAMD21J" prefix="U">
+<deviceset name="AT-SAM-D21-J" prefix="U">
 <description>Atmel/Microchip SAMD21 Series, 64-pin
 32-bit ARM Cortex M0+</description>
 <gates>
-<gate name="G$1" symbol="SAMD21J" x="0" y="0"/>
+<gate name="G$1" symbol="SAM-D21-J" x="0" y="0"/>
 </gates>
 <devices>
 <device name="TQFP" package="TQFP-64">
@@ -1501,11 +1682,11 @@ A3216/EIA3216</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATSAMD21G" prefix="U">
+<deviceset name="AT-SAM-D21-G" prefix="U">
 <description>Microchip/Atmel SAMD21 Series, 48-pin
 ARM Cortex M0+</description>
 <gates>
-<gate name="G$1" symbol="SAMD21G" x="0" y="0"/>
+<gate name="G$1" symbol="SAM-D21-G" x="0" y="0"/>
 </gates>
 <devices>
 <device name="QFN" package="QFN-48">
@@ -1620,11 +1801,329 @@ ARM Cortex M0+</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATSAMD21E" prefix="U">
+<deviceset name="AT-SAM-L21-E" prefix="U">
+<description>Microchip/Atmel SAML21 Series, 32-pin
+ARM Cortex M0+</description>
+<gates>
+<gate name="G$1" symbol="SAM-L21-E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TQFP" package="TQFP-32">
+<connects>
+<connect gate="G$1" pin="GND@10" pad="10"/>
+<connect gate="G$1" pin="GND@28" pad="28"/>
+<connect gate="G$1" pin="PA00" pad="1"/>
+<connect gate="G$1" pin="PA01" pad="2"/>
+<connect gate="G$1" pin="PA02" pad="3"/>
+<connect gate="G$1" pin="PA03" pad="4"/>
+<connect gate="G$1" pin="PA04" pad="5"/>
+<connect gate="G$1" pin="PA05" pad="6"/>
+<connect gate="G$1" pin="PA06" pad="7"/>
+<connect gate="G$1" pin="PA07" pad="8"/>
+<connect gate="G$1" pin="PA08" pad="11"/>
+<connect gate="G$1" pin="PA09" pad="12"/>
+<connect gate="G$1" pin="PA10" pad="13"/>
+<connect gate="G$1" pin="PA11" pad="14"/>
+<connect gate="G$1" pin="PA14/XIN" pad="15"/>
+<connect gate="G$1" pin="PA15/XOUT" pad="16"/>
+<connect gate="G$1" pin="PA16" pad="17"/>
+<connect gate="G$1" pin="PA17" pad="18"/>
+<connect gate="G$1" pin="PA18" pad="19"/>
+<connect gate="G$1" pin="PA19" pad="20"/>
+<connect gate="G$1" pin="PA22" pad="21"/>
+<connect gate="G$1" pin="PA23" pad="22"/>
+<connect gate="G$1" pin="PA24" pad="23"/>
+<connect gate="G$1" pin="PA25" pad="24"/>
+<connect gate="G$1" pin="PA27" pad="25"/>
+<connect gate="G$1" pin="PA30" pad="31"/>
+<connect gate="G$1" pin="PA31" pad="32"/>
+<connect gate="G$1" pin="RESET" pad="26"/>
+<connect gate="G$1" pin="VDDANA" pad="9"/>
+<connect gate="G$1" pin="VDDCORE" pad="27"/>
+<connect gate="G$1" pin="VDDIN" pad="30"/>
+<connect gate="G$1" pin="VSW" pad="29"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AT-SAM-L21-J" prefix="U">
+<description>Atmel/Microchip SAML21 Series, 64-pin
+32-bit ARM Cortex M0+</description>
+<gates>
+<gate name="G$1" symbol="SAM-L21-J" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TQFP" package="TQFP-64">
+<connects>
+<connect gate="G$1" pin="GND@22" pad="22"/>
+<connect gate="G$1" pin="GND@33" pad="33"/>
+<connect gate="G$1" pin="GND@47" pad="47"/>
+<connect gate="G$1" pin="GND@54" pad="54"/>
+<connect gate="G$1" pin="GNDANA" pad="7"/>
+<connect gate="G$1" pin="PA00" pad="1"/>
+<connect gate="G$1" pin="PA01" pad="2"/>
+<connect gate="G$1" pin="PA02" pad="3"/>
+<connect gate="G$1" pin="PA03" pad="4"/>
+<connect gate="G$1" pin="PA04" pad="13"/>
+<connect gate="G$1" pin="PA05" pad="14"/>
+<connect gate="G$1" pin="PA06" pad="15"/>
+<connect gate="G$1" pin="PA07" pad="16"/>
+<connect gate="G$1" pin="PA08" pad="17"/>
+<connect gate="G$1" pin="PA09" pad="18"/>
+<connect gate="G$1" pin="PA10" pad="19"/>
+<connect gate="G$1" pin="PA11" pad="20"/>
+<connect gate="G$1" pin="PA12" pad="29"/>
+<connect gate="G$1" pin="PA13" pad="30"/>
+<connect gate="G$1" pin="PA14/XIN" pad="31"/>
+<connect gate="G$1" pin="PA15/XOUT" pad="32"/>
+<connect gate="G$1" pin="PA16" pad="35"/>
+<connect gate="G$1" pin="PA17" pad="36"/>
+<connect gate="G$1" pin="PA18" pad="37"/>
+<connect gate="G$1" pin="PA19" pad="38"/>
+<connect gate="G$1" pin="PA20" pad="41"/>
+<connect gate="G$1" pin="PA21" pad="42"/>
+<connect gate="G$1" pin="PA22" pad="43"/>
+<connect gate="G$1" pin="PA23" pad="44"/>
+<connect gate="G$1" pin="PA24" pad="45"/>
+<connect gate="G$1" pin="PA25" pad="46"/>
+<connect gate="G$1" pin="PA27" pad="51"/>
+<connect gate="G$1" pin="PA30" pad="57"/>
+<connect gate="G$1" pin="PA31" pad="58"/>
+<connect gate="G$1" pin="PB00" pad="61"/>
+<connect gate="G$1" pin="PB01" pad="62"/>
+<connect gate="G$1" pin="PB02" pad="63"/>
+<connect gate="G$1" pin="PB03" pad="64"/>
+<connect gate="G$1" pin="PB04" pad="5"/>
+<connect gate="G$1" pin="PB05" pad="6"/>
+<connect gate="G$1" pin="PB06" pad="9"/>
+<connect gate="G$1" pin="PB07" pad="10"/>
+<connect gate="G$1" pin="PB08" pad="11"/>
+<connect gate="G$1" pin="PB09" pad="12"/>
+<connect gate="G$1" pin="PB10" pad="23"/>
+<connect gate="G$1" pin="PB11" pad="24"/>
+<connect gate="G$1" pin="PB12" pad="25"/>
+<connect gate="G$1" pin="PB13" pad="26"/>
+<connect gate="G$1" pin="PB14" pad="27"/>
+<connect gate="G$1" pin="PB15" pad="28"/>
+<connect gate="G$1" pin="PB16" pad="39"/>
+<connect gate="G$1" pin="PB17" pad="40"/>
+<connect gate="G$1" pin="PB22" pad="49"/>
+<connect gate="G$1" pin="PB23" pad="50"/>
+<connect gate="G$1" pin="PB30" pad="59"/>
+<connect gate="G$1" pin="PB31" pad="60"/>
+<connect gate="G$1" pin="RESET" pad="52"/>
+<connect gate="G$1" pin="VDDANA" pad="8"/>
+<connect gate="G$1" pin="VDDCORE" pad="53"/>
+<connect gate="G$1" pin="VDDIN" pad="56"/>
+<connect gate="G$1" pin="VDDIO@21" pad="21"/>
+<connect gate="G$1" pin="VDDIO@34" pad="34"/>
+<connect gate="G$1" pin="VDDIO@48" pad="48"/>
+<connect gate="G$1" pin="VSW" pad="55"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="QFN" package="QFN-64">
+<connects>
+<connect gate="G$1" pin="GND@22" pad="22"/>
+<connect gate="G$1" pin="GND@33" pad="33"/>
+<connect gate="G$1" pin="GND@47" pad="47"/>
+<connect gate="G$1" pin="GND@54" pad="54"/>
+<connect gate="G$1" pin="GNDANA" pad="7"/>
+<connect gate="G$1" pin="PA00" pad="1"/>
+<connect gate="G$1" pin="PA01" pad="2"/>
+<connect gate="G$1" pin="PA02" pad="3"/>
+<connect gate="G$1" pin="PA03" pad="4"/>
+<connect gate="G$1" pin="PA04" pad="13"/>
+<connect gate="G$1" pin="PA05" pad="14"/>
+<connect gate="G$1" pin="PA06" pad="15"/>
+<connect gate="G$1" pin="PA07" pad="16"/>
+<connect gate="G$1" pin="PA08" pad="17"/>
+<connect gate="G$1" pin="PA09" pad="18"/>
+<connect gate="G$1" pin="PA10" pad="19"/>
+<connect gate="G$1" pin="PA11" pad="20"/>
+<connect gate="G$1" pin="PA12" pad="29"/>
+<connect gate="G$1" pin="PA13" pad="30"/>
+<connect gate="G$1" pin="PA14/XIN" pad="31"/>
+<connect gate="G$1" pin="PA15/XOUT" pad="32"/>
+<connect gate="G$1" pin="PA16" pad="35"/>
+<connect gate="G$1" pin="PA17" pad="36"/>
+<connect gate="G$1" pin="PA18" pad="37"/>
+<connect gate="G$1" pin="PA19" pad="38"/>
+<connect gate="G$1" pin="PA20" pad="41"/>
+<connect gate="G$1" pin="PA21" pad="42"/>
+<connect gate="G$1" pin="PA22" pad="43"/>
+<connect gate="G$1" pin="PA23" pad="44"/>
+<connect gate="G$1" pin="PA24" pad="45"/>
+<connect gate="G$1" pin="PA25" pad="46"/>
+<connect gate="G$1" pin="PA27" pad="51"/>
+<connect gate="G$1" pin="PA30" pad="57"/>
+<connect gate="G$1" pin="PA31" pad="58"/>
+<connect gate="G$1" pin="PB00" pad="61"/>
+<connect gate="G$1" pin="PB01" pad="62"/>
+<connect gate="G$1" pin="PB02" pad="63"/>
+<connect gate="G$1" pin="PB03" pad="64"/>
+<connect gate="G$1" pin="PB04" pad="5"/>
+<connect gate="G$1" pin="PB05" pad="6"/>
+<connect gate="G$1" pin="PB06" pad="9"/>
+<connect gate="G$1" pin="PB07" pad="10"/>
+<connect gate="G$1" pin="PB08" pad="11"/>
+<connect gate="G$1" pin="PB09" pad="12"/>
+<connect gate="G$1" pin="PB10" pad="23"/>
+<connect gate="G$1" pin="PB11" pad="24"/>
+<connect gate="G$1" pin="PB12" pad="25"/>
+<connect gate="G$1" pin="PB13" pad="26"/>
+<connect gate="G$1" pin="PB14" pad="27"/>
+<connect gate="G$1" pin="PB15" pad="28"/>
+<connect gate="G$1" pin="PB16" pad="39"/>
+<connect gate="G$1" pin="PB17" pad="40"/>
+<connect gate="G$1" pin="PB22" pad="49"/>
+<connect gate="G$1" pin="PB23" pad="50"/>
+<connect gate="G$1" pin="PB30" pad="59"/>
+<connect gate="G$1" pin="PB31" pad="60"/>
+<connect gate="G$1" pin="RESET" pad="52"/>
+<connect gate="G$1" pin="VDDANA" pad="8"/>
+<connect gate="G$1" pin="VDDCORE" pad="53"/>
+<connect gate="G$1" pin="VDDIN" pad="56"/>
+<connect gate="G$1" pin="VDDIO@21" pad="21"/>
+<connect gate="G$1" pin="VDDIO@34" pad="34"/>
+<connect gate="G$1" pin="VDDIO@48" pad="48"/>
+<connect gate="G$1" pin="VSW" pad="55"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AT-SAM-L21-G" prefix="U">
+<description>Microchip/Atmel SAML21 Series, 48-pin
+ARM Cortex M0+</description>
+<gates>
+<gate name="G$1" symbol="SAM-L21-G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="QFN" package="QFN-48">
+<connects>
+<connect gate="G$1" pin="GND@18" pad="18"/>
+<connect gate="G$1" pin="GND@35" pad="35"/>
+<connect gate="G$1" pin="GND@42" pad="42"/>
+<connect gate="G$1" pin="GNDANA" pad="5"/>
+<connect gate="G$1" pin="PA00" pad="1"/>
+<connect gate="G$1" pin="PA01" pad="2"/>
+<connect gate="G$1" pin="PA02" pad="3"/>
+<connect gate="G$1" pin="PA03" pad="4"/>
+<connect gate="G$1" pin="PA04" pad="9"/>
+<connect gate="G$1" pin="PA05" pad="10"/>
+<connect gate="G$1" pin="PA06" pad="11"/>
+<connect gate="G$1" pin="PA07" pad="12"/>
+<connect gate="G$1" pin="PA08" pad="13"/>
+<connect gate="G$1" pin="PA09" pad="14"/>
+<connect gate="G$1" pin="PA10" pad="15"/>
+<connect gate="G$1" pin="PA11" pad="16"/>
+<connect gate="G$1" pin="PA12" pad="21"/>
+<connect gate="G$1" pin="PA13" pad="22"/>
+<connect gate="G$1" pin="PA14/XIN" pad="23"/>
+<connect gate="G$1" pin="PA15/XOUT" pad="24"/>
+<connect gate="G$1" pin="PA16" pad="25"/>
+<connect gate="G$1" pin="PA17" pad="26"/>
+<connect gate="G$1" pin="PA18" pad="27"/>
+<connect gate="G$1" pin="PA19" pad="28"/>
+<connect gate="G$1" pin="PA20" pad="29"/>
+<connect gate="G$1" pin="PA21" pad="30"/>
+<connect gate="G$1" pin="PA22" pad="31"/>
+<connect gate="G$1" pin="PA23" pad="32"/>
+<connect gate="G$1" pin="PA24" pad="33"/>
+<connect gate="G$1" pin="PA25" pad="34"/>
+<connect gate="G$1" pin="PA27" pad="39"/>
+<connect gate="G$1" pin="PA30" pad="45"/>
+<connect gate="G$1" pin="PA31" pad="46"/>
+<connect gate="G$1" pin="PB02" pad="47"/>
+<connect gate="G$1" pin="PB03" pad="48"/>
+<connect gate="G$1" pin="PB08" pad="7"/>
+<connect gate="G$1" pin="PB09" pad="8"/>
+<connect gate="G$1" pin="PB10" pad="19"/>
+<connect gate="G$1" pin="PB11" pad="20"/>
+<connect gate="G$1" pin="PB22" pad="37"/>
+<connect gate="G$1" pin="PB23" pad="38"/>
+<connect gate="G$1" pin="RESET" pad="40"/>
+<connect gate="G$1" pin="VDDANA" pad="6"/>
+<connect gate="G$1" pin="VDDCORE" pad="41"/>
+<connect gate="G$1" pin="VDDIN" pad="44"/>
+<connect gate="G$1" pin="VDDIO@17" pad="17"/>
+<connect gate="G$1" pin="VDDIO@36" pad="36"/>
+<connect gate="G$1" pin="VSW" pad="43"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TQFP" package="TQFP-48">
+<connects>
+<connect gate="G$1" pin="GND@18" pad="18"/>
+<connect gate="G$1" pin="GND@35" pad="35"/>
+<connect gate="G$1" pin="GND@42" pad="42"/>
+<connect gate="G$1" pin="GNDANA" pad="5"/>
+<connect gate="G$1" pin="PA00" pad="1"/>
+<connect gate="G$1" pin="PA01" pad="2"/>
+<connect gate="G$1" pin="PA02" pad="3"/>
+<connect gate="G$1" pin="PA03" pad="4"/>
+<connect gate="G$1" pin="PA04" pad="9"/>
+<connect gate="G$1" pin="PA05" pad="10"/>
+<connect gate="G$1" pin="PA06" pad="11"/>
+<connect gate="G$1" pin="PA07" pad="12"/>
+<connect gate="G$1" pin="PA08" pad="13"/>
+<connect gate="G$1" pin="PA09" pad="14"/>
+<connect gate="G$1" pin="PA10" pad="15"/>
+<connect gate="G$1" pin="PA11" pad="16"/>
+<connect gate="G$1" pin="PA12" pad="21"/>
+<connect gate="G$1" pin="PA13" pad="22"/>
+<connect gate="G$1" pin="PA14/XIN" pad="23"/>
+<connect gate="G$1" pin="PA15/XOUT" pad="24"/>
+<connect gate="G$1" pin="PA16" pad="25"/>
+<connect gate="G$1" pin="PA17" pad="26"/>
+<connect gate="G$1" pin="PA18" pad="27"/>
+<connect gate="G$1" pin="PA19" pad="28"/>
+<connect gate="G$1" pin="PA20" pad="29"/>
+<connect gate="G$1" pin="PA21" pad="30"/>
+<connect gate="G$1" pin="PA22" pad="31"/>
+<connect gate="G$1" pin="PA23" pad="32"/>
+<connect gate="G$1" pin="PA24" pad="33"/>
+<connect gate="G$1" pin="PA25" pad="34"/>
+<connect gate="G$1" pin="PA27" pad="39"/>
+<connect gate="G$1" pin="PA30" pad="45"/>
+<connect gate="G$1" pin="PA31" pad="46"/>
+<connect gate="G$1" pin="PB02" pad="47"/>
+<connect gate="G$1" pin="PB03" pad="48"/>
+<connect gate="G$1" pin="PB08" pad="7"/>
+<connect gate="G$1" pin="PB09" pad="8"/>
+<connect gate="G$1" pin="PB10" pad="19"/>
+<connect gate="G$1" pin="PB11" pad="20"/>
+<connect gate="G$1" pin="PB22" pad="37"/>
+<connect gate="G$1" pin="PB23" pad="38"/>
+<connect gate="G$1" pin="RESET" pad="40"/>
+<connect gate="G$1" pin="VDDANA" pad="6"/>
+<connect gate="G$1" pin="VDDCORE" pad="41"/>
+<connect gate="G$1" pin="VDDIN" pad="44"/>
+<connect gate="G$1" pin="VDDIO@17" pad="17"/>
+<connect gate="G$1" pin="VDDIO@36" pad="36"/>
+<connect gate="G$1" pin="VSW" pad="43"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AT-SAM-D21-E" prefix="U">
 <description>Microchip/Atmel SAMD21 Series, 32-pin
 ARM Cortex M0+</description>
 <gates>
-<gate name="G$1" symbol="SAMD21E" x="0" y="0"/>
+<gate name="G$1" symbol="SAM-D21-E" x="0" y="0"/>
 </gates>
 <devices>
 <device name="TQFP" package="TQFP-32">
