@@ -421,6 +421,20 @@
 <text x="-3.81" y="3.175" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="CFPX-217">
+<wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.06" layer="48"/>
+<wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.06" layer="48"/>
+<wire x1="1.6" y1="-0.75" x2="1.6" y2="0.75" width="0.06" layer="48"/>
+<wire x1="-1.6" y1="-0.75" x2="1.6" y2="-0.75" width="0.06" layer="48"/>
+<wire x1="-1.9" y1="1.15" x2="1.9" y2="1.15" width="0.06" layer="21"/>
+<wire x1="-1.9" y1="1.15" x2="-1.9" y2="-1.15" width="0.06" layer="21"/>
+<wire x1="-1.9" y1="-1.15" x2="1.9" y2="-1.15" width="0.06" layer="21"/>
+<wire x1="1.9" y1="1.15" x2="1.9" y2="-1.15" width="0.06" layer="21"/>
+<smd name="1" x="-1.2" y="0" dx="1.1" dy="1.9" layer="1"/>
+<smd name="2" x="1.2" y="0" dx="1.1" dy="1.9" layer="1"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SAM-L21-J">
@@ -537,6 +551,21 @@
 <text x="-6.35" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="3" x="0" y="0" visible="off" length="point" rot="R90"/>
+</symbol>
+<symbol name="CRYSTAL">
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-2.54" x2="-0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-2.54" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="3.175" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-4.445" size="1.27" layer="95" ratio="10">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -850,6 +879,25 @@ Mouser Product # 688-SKHMQME010</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LFXTAL054236-R" prefix="Y">
+<description>Crystal 32.768MHz
+IQD Frequency Products
+Manufacturer Part # LFXTAL054236Reel</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CFPX-217">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -940,6 +988,9 @@ Mouser Product # 688-SKHMQME010</description>
 <part name="S1" library="dr-library" deviceset="SKHMQME010" device=""/>
 <part name="C9" library="dr-library" deviceset="CAP" device="0603" value="1uF"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="C10" library="dr-library" deviceset="CAP" device="0603" value="22pF"/>
+<part name="C11" library="dr-library" deviceset="CAP" device="0603"/>
+<part name="Y2" library="dr-library" deviceset="LFXTAL054236-R" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -972,6 +1023,9 @@ Mouser Product # 688-SKHMQME010</description>
 <instance part="S1" gate="G$1" x="-73.66" y="58.42" rot="R90"/>
 <instance part="C9" gate="G$1" x="-58.42" y="58.42"/>
 <instance part="GND7" gate="1" x="-58.42" y="45.72"/>
+<instance part="C10" gate="G$1" x="-5.08" y="22.86" rot="R90"/>
+<instance part="C11" gate="G$1" x="-5.08" y="7.62" rot="R90"/>
+<instance part="Y2" gate="G$1" x="-12.7" y="15.24" rot="R90"/>
 </instances>
 <busses>
 </busses>

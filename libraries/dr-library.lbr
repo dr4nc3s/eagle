@@ -857,6 +857,20 @@ A3216/EIA3216</description>
 <text x="-3.81" y="3.175" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="CFPX-217">
+<wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.06" layer="48"/>
+<wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.06" layer="48"/>
+<wire x1="1.6" y1="-0.75" x2="1.6" y2="0.75" width="0.06" layer="48"/>
+<wire x1="-1.6" y1="-0.75" x2="1.6" y2="-0.75" width="0.06" layer="48"/>
+<wire x1="-1.9" y1="1.15" x2="1.9" y2="1.15" width="0.06" layer="21"/>
+<wire x1="-1.9" y1="1.15" x2="-1.9" y2="-1.15" width="0.06" layer="21"/>
+<wire x1="-1.9" y1="-1.15" x2="1.9" y2="-1.15" width="0.06" layer="21"/>
+<wire x1="1.9" y1="1.15" x2="1.9" y2="-1.15" width="0.06" layer="21"/>
+<smd name="1" x="-1.2" y="0" dx="1.1" dy="1.9" layer="1"/>
+<smd name="2" x="1.2" y="0" dx="1.1" dy="1.9" layer="1"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SLHT5">
@@ -2328,6 +2342,8 @@ Datasheet: http://www.ti.com/lit/ds/symlink/reg1117.pdf</description>
 </devices>
 </deviceset>
 <deviceset name="CRYSTAL-IQD" prefix="Y" uservalue="yes">
+<description>Crystal - IQD Frequency Products
+Manufacturer Part # LFXTAL033379Bulk</description>
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
@@ -2674,6 +2690,25 @@ Mouser Product # 688-SKHMQME010</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="3" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LFXTAL054236-R" prefix="Y">
+<description>Crystal 32.768MHz
+IQD Frequency Products
+Manufacturer Part # LFXTAL054236Reel</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CFPX-217">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

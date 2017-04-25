@@ -753,6 +753,7 @@
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -779,6 +780,7 @@
 <instance part="+3V4" gate="G$1" x="-12.7" y="86.36"/>
 <instance part="GND5" gate="1" x="17.78" y="83.82"/>
 <instance part="+3V5" gate="G$1" x="43.18" y="99.06"/>
+<instance part="GND6" gate="1" x="38.1" y="-35.56"/>
 </instances>
 <busses>
 </busses>
@@ -830,6 +832,24 @@
 <junction x="22.86" y="88.9"/>
 <wire x1="17.78" y1="88.9" x2="17.78" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND@22"/>
+<wire x1="30.48" y1="-25.4" x2="30.48" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-27.94" x2="33.02" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="33.02" y1="-27.94" x2="35.56" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-27.94" x2="38.1" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-27.94" x2="38.1" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND@33"/>
+<wire x1="33.02" y1="-25.4" x2="33.02" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND@47"/>
+<wire x1="35.56" y1="-25.4" x2="35.56" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND@54"/>
+<wire x1="38.1" y1="-25.4" x2="38.1" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="33.02" y="-27.94"/>
+<junction x="35.56" y="-27.94"/>
+<junction x="38.1" y="-27.94"/>
 </segment>
 </net>
 <net name="N$3" class="0">
