@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="57" fill="1" visible="yes" active="yes"/>
@@ -827,8 +827,8 @@ A3216/EIA3216</description>
 <wire x1="3.2" y1="-2.35" x2="3.325" y2="-2.35" width="0.06" layer="21"/>
 <wire x1="-3.2" y1="-2.35" x2="-3.2" y2="2.35" width="0.06" layer="21" curve="-180"/>
 <wire x1="3.2" y1="2.35" x2="3.2" y2="-2.35" width="0.06" layer="21" curve="-180"/>
-<text x="-3.81" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="2.54" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <pad name="1" x="-2.44" y="0" drill="0.8128"/>
 <pad name="2" x="2.44" y="0" drill="0.8128"/>
 <wire x1="-5.715" y1="2.54" x2="5.715" y2="2.54" width="0.127" layer="39"/>
@@ -870,6 +870,54 @@ A3216/EIA3216</description>
 <smd name="2" x="1.2" y="0" dx="1.1" dy="1.9" layer="1"/>
 <text x="-2.54" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SOT-223-3">
+<smd name="PAD" x="0" y="3.2" dx="3.3" dy="1.6" layer="1"/>
+<smd name="1" x="-2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
+<smd name="2" x="0" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
+<smd name="3" x="2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
+<wire x1="-3.35" y1="1.85" x2="3.35" y2="1.85" width="0.08" layer="48"/>
+<wire x1="-3.35" y1="1.85" x2="-3.35" y2="-1.85" width="0.08" layer="48"/>
+<wire x1="-3.35" y1="-1.85" x2="3.35" y2="-1.85" width="0.08" layer="48"/>
+<wire x1="3.35" y1="1.85" x2="3.35" y2="-1.85" width="0.08" layer="48"/>
+<wire x1="-3.1" y1="1.6" x2="-3.1" y2="-1.6" width="0.1" layer="21"/>
+<wire x1="-3.1" y1="-1.6" x2="3.1" y2="-1.6" width="0.1" layer="21"/>
+<wire x1="3.1" y1="-1.6" x2="3.1" y2="1.6" width="0.1" layer="21"/>
+<wire x1="3.1" y1="1.6" x2="-3.1" y2="1.6" width="0.1" layer="21"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
+<package name="LED-1206">
+<smd name="A" x="-1.75" y="0" dx="1.5" dy="1.6" layer="1"/>
+<smd name="C" x="1.75" y="0" dx="1.5" dy="1.6" layer="1"/>
+<wire x1="2.1" y1="1" x2="2.7" y2="1" width="0.08" layer="21"/>
+<wire x1="2.7" y1="1" x2="2.7" y2="-1" width="0.08" layer="21"/>
+<wire x1="2.7" y1="-1" x2="2.1" y2="-1" width="0.08" layer="21"/>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.08" layer="48"/>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.08" layer="48"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.08" layer="48"/>
+<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.08" layer="48"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+</package>
+<package name="M50-4910545">
+<description>10-pin connector
+1.27mm pitch</description>
+<smd name="5" x="0" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="3" x="-1.25" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="1" x="-2.54" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="7" x="1.27" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="9" x="2.54" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="6" x="0" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="4" x="-1.25" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="2" x="-2.54" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="8" x="1.27" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="10" x="2.54" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<hole x="4.12" y="0" drill="0.95"/>
+<hole x="-4.12" y="0" drill="1.35"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<circle x="-3.81" y="-2.54" radius="0.359209375" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1388,8 +1436,8 @@ A3216/EIA3216</description>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<text x="-3.81" y="3.175" size="1.27" layer="95" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-4.445" size="1.27" layer="95" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="3.175" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-4.445" size="1.27" layer="95" font="vector" ratio="10">&gt;VALUE</text>
 </symbol>
 <symbol name="PUSHBUTTON">
 <pin name="1" x="-5.08" y="0" visible="off" length="short"/>
@@ -1402,6 +1450,52 @@ A3216/EIA3216</description>
 <text x="-6.35" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="3" x="0" y="0" visible="off" length="point" rot="R90"/>
+</symbol>
+<symbol name="AP7361C">
+<pin name="VIN" x="-12.7" y="2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="VOUT" x="12.7" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="0" y="-10.16" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="6.096" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="LED">
+<pin name="A" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="C" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.286" x2="0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.286" x2="0.762" y2="2.286" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.286" x2="1.27" y2="1.778" width="0.254" layer="94"/>
+<wire x1="2.032" y1="1.524" x2="1.524" y2="1.016" width="0.254" layer="94"/>
+<wire x1="2.032" y1="1.524" x2="1.524" y2="1.524" width="0.254" layer="94"/>
+<wire x1="2.032" y1="1.524" x2="2.032" y2="1.016" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="0" y="-2.794" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="CORTEX_10-PIN">
+<pin name="VCC" x="-15.24" y="5.08" length="short"/>
+<pin name="GND@3" x="-15.24" y="2.54" length="short"/>
+<pin name="GND@5" x="-15.24" y="0" length="short"/>
+<pin name="KEY" x="-15.24" y="-2.54" length="short"/>
+<pin name="GNDDET" x="-15.24" y="-5.08" length="short"/>
+<pin name="RESET" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="NC/TDI" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="SWO/TDO" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="SWDCLK/TCK" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="SWDIO/TMS" x="15.24" y="5.08" length="short" rot="R180"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="7.62" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2697,7 +2791,7 @@ Mouser Product # 688-SKHMQME010</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LFXTAL054236-R" prefix="Y">
+<deviceset name="LFXTAL054236-R" prefix="Y" uservalue="yes">
 <description>Crystal 32.768MHz
 IQD Frequency Products
 Manufacturer Part # LFXTAL054236Reel</description>
@@ -2709,6 +2803,71 @@ Manufacturer Part # LFXTAL054236Reel</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP7361C-33E-13" prefix="U" uservalue="yes">
+<description>AP7361C-33E-13 
+3.3V Fixed LDO
+Diodes Inc.
+3.3V, 1A output
+Vdrop 360mV @ 1A</description>
+<gates>
+<gate name="G$1" symbol="AP7361C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-223-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1206" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M50-4910545" prefix="J">
+<description>Harwin 10-pin Connector
+M50 Series
+1.27mm pitch</description>
+<gates>
+<gate name="G$1" symbol="CORTEX_10-PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M50-4910545">
+<connects>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GNDDET" pad="9"/>
+<connect gate="G$1" pin="KEY" pad="7"/>
+<connect gate="G$1" pin="NC/TDI" pad="8"/>
+<connect gate="G$1" pin="RESET" pad="10"/>
+<connect gate="G$1" pin="SWDCLK/TCK" pad="4"/>
+<connect gate="G$1" pin="SWDIO/TMS" pad="2"/>
+<connect gate="G$1" pin="SWO/TDO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
