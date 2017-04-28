@@ -1177,7 +1177,7 @@ M50 Series
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
-<part name="D1" library="dr-library" deviceset="LED" device="1206"/>
+<part name="D1" library="dr-library" deviceset="LED" device="1206" value="PWR"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="dr-library" deviceset="M50-4910545" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
