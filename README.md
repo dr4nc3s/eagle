@@ -1,8 +1,8 @@
-#eagle#
+# eagle #
 
 My own Eagle components library as well as any PCB projects/designs I choose to work on. 
 
-##Current Project - SAML21J breakout##
+## Current Project - SAML21J breakout ##
 
 Breakout board for using the SAML21J (yep, 64-pin). Currently putting together a list of features I want on the board. Don't want to make this too expensive, but I want enough features for me to utilize the various functions of the SAML21.
 
@@ -16,7 +16,7 @@ Breakout board for using the SAML21J (yep, 64-pin). Currently putting together a
 7. USB-UART bridge (?) : unsure if I want this
 
 
-##Future Projects##
+## Future Projects ##
 
 1. ESP32 breakout board (utilize WROOM module)
 2. PIC breakout board - unsure whether I want PIC18, PIC24, or PIC32 architecture
