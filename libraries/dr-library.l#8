@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -904,6 +904,13 @@ A3216/EIA3216</description>
 <smd name="P$1" x="0" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
 <smd name="P$2" x="-1.25" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
 <smd name="P$3" x="-2.54" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="P$4" x="1.27" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="P$5" x="2.54" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="P$6" x="0" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="P$7" x="-1.25" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="P$8" x="-2.54" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="P$9" x="1.27" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="P$10" x="2.54" y="2.15" dx="0.7" dy="2.9" layer="1"/>
 </package>
 </packages>
 <symbols>

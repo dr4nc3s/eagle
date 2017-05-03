@@ -901,16 +901,16 @@ A3216/EIA3216</description>
 <text x="-2.54" y="-2.54" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 </package>
 <package name="M50-4910545">
-<smd name="P$1" x="0" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
-<smd name="P$2" x="-1.25" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
-<smd name="P$3" x="-2.54" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
-<smd name="P$4" x="1.27" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
-<smd name="P$5" x="2.54" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
-<smd name="P$6" x="0" y="2.15" dx="0.7" dy="2.9" layer="1"/>
-<smd name="P$7" x="-1.25" y="2.15" dx="0.7" dy="2.9" layer="1"/>
-<smd name="P$8" x="-2.54" y="2.15" dx="0.7" dy="2.9" layer="1"/>
-<smd name="P$9" x="1.27" y="2.15" dx="0.7" dy="2.9" layer="1"/>
-<smd name="P$10" x="2.54" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="5" x="0" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="3" x="-1.25" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="1" x="-2.54" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="7" x="1.27" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="9" x="2.54" y="-2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="6" x="0" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="4" x="-1.25" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="2" x="-2.54" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="8" x="1.27" y="2.15" dx="0.7" dy="2.9" layer="1"/>
+<smd name="10" x="2.54" y="2.15" dx="0.7" dy="2.9" layer="1"/>
 <hole x="4.12" y="0" drill="0.95"/>
 <hole x="-4.12" y="0" drill="1.35"/>
 </package>
