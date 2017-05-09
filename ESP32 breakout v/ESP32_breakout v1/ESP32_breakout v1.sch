@@ -706,6 +706,31 @@
 <pad name="12" x="11.43" y="0" drill="1.016" diameter="2.032" rot="R90"/>
 <rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
 </package>
+<package name="MOLEX_47346-001">
+<smd name="3" x="2.61" y="0" dx="1.38" dy="0.45" layer="1"/>
+<smd name="4" x="2.61" y="0.65" dx="1.38" dy="0.45" layer="1"/>
+<smd name="2" x="2.61" y="-0.65" dx="1.38" dy="0.45" layer="1"/>
+<smd name="5" x="2.61" y="1.3" dx="1.38" dy="0.45" layer="1"/>
+<smd name="1" x="2.61" y="-1.3" dx="1.38" dy="0.45" layer="1"/>
+<smd name="P$1" x="2.3" y="2.4625" dx="1.475" dy="2.1" layer="1" rot="R90"/>
+<smd name="P$2" x="2.3" y="-2.4625" dx="1.475" dy="2.1" layer="1" rot="R90"/>
+<smd name="P$3" x="0" y="0.8375" dx="1.175" dy="1.9" layer="1" rot="R90"/>
+<smd name="P$4" x="0" y="-0.8375" dx="1.175" dy="1.9" layer="1" rot="R90"/>
+<smd name="P$5" x="0" y="2.9125" dx="2.375" dy="1.9" layer="1" rot="R90"/>
+<smd name="P$6" x="0" y="-2.9125" dx="2.375" dy="1.9" layer="1" rot="R90"/>
+<wire x1="2.05" y1="-3.9" x2="2.05" y2="3.9" width="0.05" layer="48"/>
+<wire x1="-2.05" y1="-3.9" x2="-2.05" y2="3.9" width="0.05" layer="48"/>
+<wire x1="-2.05" y1="3.9" x2="2.05" y2="3.9" width="0.05" layer="48"/>
+<wire x1="-2.05" y1="-3.9" x2="2.05" y2="-3.9" width="0.05" layer="48"/>
+<wire x1="-1.5175" y1="3.9" x2="-2" y2="3.9" width="0.4064" layer="21"/>
+<wire x1="-2" y1="3.9" x2="-2" y2="3" width="0.4064" layer="21"/>
+<wire x1="-1.5175" y1="-3.9" x2="-2" y2="-3.9" width="0.4064" layer="21"/>
+<wire x1="-2" y1="-3.9" x2="-2" y2="-3" width="0.4064" layer="21"/>
+<wire x1="1.6175" y1="3.9" x2="2.1" y2="3.9" width="0.4064" layer="21"/>
+<wire x1="2.1" y1="3.9" x2="2.1" y2="3.8175" width="0.4064" layer="21"/>
+<wire x1="1.6175" y1="-3.9" x2="2.1" y2="-3.9" width="0.4064" layer="21"/>
+<wire x1="2.1" y1="-3.9" x2="2.1" y2="-3.8175" width="0.4064" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP-WROOM-32">
@@ -896,6 +921,17 @@
 <wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="USB-MICRO">
+<wire x1="5.08" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<pin name="GND" x="-5.08" y="10.16" length="middle"/>
+<pin name="ID" x="-5.08" y="7.62" length="middle"/>
+<pin name="D+" x="-5.08" y="5.08" length="middle"/>
+<pin name="D-" x="-5.08" y="2.54" length="middle"/>
+<pin name="VDD" x="-5.08" y="0" length="middle"/>
+<text x="6.35" y="2.54" size="1.778" layer="94" rot="R90">USB</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1184,6 +1220,25 @@ Vdrop 360mV @ 1A</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MOLEX_USBMICRO">
+<gates>
+<gate name="G$1" symbol="USB-MICRO" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="MOLEX_47346-001">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="ID" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -1288,7 +1343,7 @@ Vdrop 360mV @ 1A</description>
 <part name="C5" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
 <part name="C6" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
 <part name="D1" library="dr-library" deviceset="LED" device="1206"/>
-<part name="R3" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R3" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
@@ -1298,6 +1353,9 @@ Vdrop 360mV @ 1A</description>
 <part name="U$1" library="dr-library" deviceset="M10" device=""/>
 <part name="U$2" library="dr-library" deviceset="M12" device="2ROWS"/>
 <part name="U$3" library="dr-library" deviceset="M12" device="2ROWS"/>
+<part name="U$4" library="dr-library" deviceset="MOLEX_USBMICRO" device=""/>
+<part name="P+3" library="supply1" deviceset="VCC" device=""/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1335,6 +1393,9 @@ Vdrop 360mV @ 1A</description>
 <instance part="U$1" gate="G$1" x="81.28" y="-2.54" rot="R180"/>
 <instance part="U$2" gate="G$1" x="104.14" y="-2.54" rot="R180"/>
 <instance part="U$3" gate="G$1" x="127" y="-2.54" rot="R180"/>
+<instance part="U$4" gate="G$1" x="7.62" y="116.84" rot="R180"/>
+<instance part="P+3" gate="VCC" x="15.24" y="124.46"/>
+<instance part="GND9" gate="1" x="15.24" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -1366,6 +1427,9 @@ Vdrop 360mV @ 1A</description>
 <wire x1="-17.78" y1="58.42" x2="-17.78" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-17.78" y="58.42"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="S1" gate="G$1" pin="3"/>
+<wire x1="-20.32" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="66.04" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND@38"/>
@@ -1392,6 +1456,9 @@ Vdrop 360mV @ 1A</description>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="114.3" y1="55.88" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 <junction x="114.3" y="55.88"/>
+<pinref part="S2" gate="G$1" pin="3"/>
+<wire x1="111.76" y1="63.5" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="63.5" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -1425,6 +1492,12 @@ Vdrop 360mV @ 1A</description>
 <pinref part="U$2" gate="G$1" pin="12"/>
 <wire x1="99.06" y1="7.62" x2="91.44" y2="7.62" width="0.1524" layer="91"/>
 <label x="91.44" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="12.7" y1="106.68" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="106.68" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -1507,6 +1580,12 @@ Vdrop 360mV @ 1A</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="116.84" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="VDD"/>
+<wire x1="12.7" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="116.84" x2="15.24" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="N$1" class="0">
