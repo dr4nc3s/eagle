@@ -915,6 +915,7 @@ A3216/EIA3216</description>
 <hole x="-4.12" y="0" drill="1.35"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-5.08" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<circle x="-3.81" y="-2.54" radius="0.359209375" width="0.254" layer="27"/>
 </package>
 </packages>
 <symbols>

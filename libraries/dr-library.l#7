@@ -912,6 +912,7 @@ A3216/EIA3216</description>
 <smd name="P$9" x="1.27" y="2.15" dx="0.7" dy="2.9" layer="1"/>
 <smd name="P$10" x="2.54" y="2.15" dx="0.7" dy="2.9" layer="1"/>
 <hole x="4.12" y="0" drill="0.95"/>
+<hole x="-4.12" y="0" drill="1.35"/>
 </package>
 </packages>
 <symbols>
