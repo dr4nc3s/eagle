@@ -353,7 +353,7 @@ UsedLibrary="C:/Users/Me Myself and I/Downloads/Molex_Library/Molex_Library/Mole
 
 [Win_1]
 Type="Schematic Editor"
-Loc="-9 -9 1835 1043"
+Loc="0 0 1844 1052"
 State=1
 Number=1
 File="ESP32_breakout v1/ESP32_breakout v1.sch"
