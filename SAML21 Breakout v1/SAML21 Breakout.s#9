@@ -1061,8 +1061,8 @@ Vdrop 360mV @ 1A</description>
 <part name="Y2" library="dr-library" deviceset="LFXTAL054236-R" device="" value="32.768MHz"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="U2" library="dr-library" deviceset="AP7361C-33E-13" device=""/>
-<part name="C12" library="dr-library" deviceset="CAP" device="0805"/>
-<part name="C13" library="dr-library" deviceset="CAP" device="0805"/>
+<part name="C12" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
+<part name="C13" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>

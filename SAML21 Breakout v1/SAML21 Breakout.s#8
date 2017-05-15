@@ -1061,8 +1061,8 @@ Vdrop 360mV @ 1A</description>
 <part name="Y2" library="dr-library" deviceset="LFXTAL054236-R" device="" value="32.768MHz"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="U2" library="dr-library" deviceset="AP7361C-33E-13" device=""/>
-<part name="C12" library="dr-library" deviceset="CAP" device="0805" value="4.7uF"/>
-<part name="C13" library="dr-library" deviceset="CAP" device="0805" value="4.7uF"/>
+<part name="C12" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
+<part name="C13" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -1371,6 +1371,20 @@ Vdrop 360mV @ 1A</description>
 <wire x1="93.98" y1="93.98" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
 <junction x="93.98" y="93.98"/>
+</segment>
+</net>
+<net name="SWCLK" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA30"/>
+<wire x1="60.96" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
+<label x="63.5" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SWDIO" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA31"/>
+<wire x1="60.96" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
+<label x="63.5" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
