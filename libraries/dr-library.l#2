@@ -5100,6 +5100,28 @@ Manufacturer Part No. - ABLS-12.000MHZ-B2-T</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="NCP-1117" prefix="U" uservalue="yes">
+<description>ON Semiconductor Low Dropout Positive Voltage Regulator
+1A output
+
+Datasheet: http://www.mouser.com/ds/2/308/NCP1117LP-D-82673.pdf</description>
+<gates>
+<gate name="G$1" symbol="REG-1117" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-223-4">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="TAB" pad="PAD"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

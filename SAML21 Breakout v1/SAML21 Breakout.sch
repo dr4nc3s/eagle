@@ -992,7 +992,7 @@ Manufacturer Part # LFXTAL054236Reel</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AP7361C-33E-13" prefix="U" uservalue="yes">
+<deviceset name="AP7361C-33E-13" prefix="U">
 <description>AP7361C-33E-13 
 3.3V Fixed LDO
 Diodes Inc.

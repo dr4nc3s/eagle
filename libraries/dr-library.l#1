@@ -5100,7 +5100,7 @@ Manufacturer Part No. - ABLS-12.000MHZ-B2-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NCP-1117" prefix="U" uservalue="yes">
+<deviceset name="NCP-1117" prefix="U">
 <description>ON Semiconductor Low Dropout Positive Voltage Regulator
 1A output
 

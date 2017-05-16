@@ -488,7 +488,7 @@ design rules under a new name.</description>
 <element name="R3" library="dr-library" package="RES-0603" value="330" x="45.72" y="40.64" rot="R180"/>
 <element name="S1" library="dr-library" package="SKHMQME010" value="" x="68.58" y="22.86"/>
 <element name="U1" library="dr-library" package="TQFP-64" value="AT-SAM-L21-JTQFP" x="41.91" y="19.05"/>
-<element name="U2" library="dr-library" package="SOT-223-3" value="" x="59.69" y="34.29"/>
+<element name="U2" library="dr-library" package="SOT-223-3" value="AP7361C-33E-13" x="59.69" y="34.29"/>
 <element name="Y2" library="dr-library" package="CFPX-217" value="32.768MHz" x="46.99" y="10.16" rot="R180"/>
 </elements>
 <signals>
