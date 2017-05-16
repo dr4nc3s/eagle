@@ -144,6 +144,10 @@
 <wire x1="53.34" y1="0" x2="53.34" y2="60.96" width="0" layer="20"/>
 <wire x1="53.34" y1="60.96" x2="0" y2="60.96" width="0" layer="20"/>
 <wire x1="0" y1="60.96" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="0" y1="0" x2="0" y2="60.96" x3="-2.54" y3="30.48" textsize="1.778" layer="48" visible="yes"/>
+<dimension x1="0" y1="60.96" x2="53.34" y2="60.96" x3="26.67" y3="67.31" textsize="1.778" layer="48" visible="yes"/>
+<dimension x1="0" y1="64.77" x2="53.34" y2="64.77" x3="26.67" y3="71.12" textsize="1.778" layer="48" unit="inch" visible="yes"/>
+<dimension x1="-3.81" y1="0" x2="-3.81" y2="60.96" x3="-6.35" y3="30.48" textsize="1.778" layer="48" unit="inch" visible="yes"/>
 </plain>
 <libraries>
 <library name="dr-library">

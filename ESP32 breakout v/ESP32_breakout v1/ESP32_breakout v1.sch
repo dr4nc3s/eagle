@@ -1449,11 +1449,11 @@ http://www2.mouser.com/ProductDetail/ALPS/SCHA4B0419/?qs=sGAEpiMZZMuJakaoiLiBpsF
 </device>
 </devices>
 </deviceset>
-<deviceset name="REG-1117" prefix="U" uservalue="yes">
-<description>Texas Instruments Low Dropout Positive Voltage Regulator
-800mA and 1A outputs
+<deviceset name="NCP-1117" prefix="U" uservalue="yes">
+<description>ON Semiconductor Low Dropout Positive Voltage Regulator
+1A output
 
-Datasheet: http://www.ti.com/lit/ds/symlink/reg1117.pdf</description>
+Datasheet: http://www.mouser.com/ds/2/308/NCP1117LP-D-82673.pdf</description>
 <gates>
 <gate name="G$1" symbol="REG-1117" x="0" y="0"/>
 </gates>
@@ -1784,7 +1784,7 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <part name="C9" library="dr-library" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="U$8" library="dr-library" deviceset="SCHA4B0419" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="U2" library="dr-library" deviceset="REG-1117" device=""/>
+<part name="U2" library="dr-library" deviceset="NCP-1117" device=""/>
 <part name="C5" library="dr-library" deviceset="CAP-POLAR" device="CASEB-3528" value="10uF"/>
 <part name="C6" library="dr-library" deviceset="CAP-POLAR" device="CASEB-3528" value="10uF"/>
 <part name="Y1" library="dr-library" deviceset="ABLS-12MHZ-B2-T" device="" value="12MHz"/>

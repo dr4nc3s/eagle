@@ -2216,8 +2216,7 @@ A3216/EIA3216</description>
 <wire x1="-5.7" y1="2.35" x2="-5.7" y2="-2.35" width="0.127" layer="48"/>
 <wire x1="5.7" y1="2.35" x2="5.7" y2="-2.35" width="0.127" layer="48"/>
 <wire x1="-5.7" y1="-2.35" x2="5.7" y2="-2.35" width="0.127" layer="48"/>
-<wire x1="-5.7" y1="1.4" x2="5.7" y2="1.4" width="0.127" layer="21"/>
-<wire x1="5.7" y1="-1.2" x2="-5.7" y2="-1.2" width="0.127" layer="21"/>
+<rectangle x1="-1.2" y1="-0.9" x2="1.2" y2="1.1" layer="21"/>
 </package>
 </packages>
 <symbols>

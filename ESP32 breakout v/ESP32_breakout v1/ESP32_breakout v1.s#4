@@ -1694,7 +1694,7 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <part name="U2" library="dr-library" deviceset="REG-1117" device=""/>
 <part name="C5" library="dr-library" deviceset="CAP-POLAR" device="CASEB-3528" value="10uF"/>
 <part name="C6" library="dr-library" deviceset="CAP-POLAR" device="CASEB-3528" value="10uF"/>
-<part name="Y1" library="dr-library" deviceset="ABLS-12MHZ-B2-T" device=""/>
+<part name="Y1" library="dr-library" deviceset="ABLS-12MHZ-B2-T" device="" value="12MHz"/>
 <part name="U$1" library="dr-library" deviceset="M02" device="LONG"/>
 <part name="U$9" library="dr-library" deviceset="M02" device="LONG"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>

@@ -742,6 +742,37 @@
 <text x="-3.81" y="-2.54" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
 <text x="5.08" y="-2.54" size="1.27" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
+<package name="CAP-A3216">
+<description>Tantalum Capacitor
+A3216/EIA3216</description>
+<wire x1="-1.6" y1="0.8" x2="1.8" y2="0.8" width="0.03" layer="48"/>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.03" layer="48"/>
+<wire x1="-1.6" y1="-0.8" x2="1.8" y2="-0.8" width="0.03" layer="48"/>
+<wire x1="1.8" y1="0.8" x2="1.8" y2="-0.8" width="0.03" layer="48"/>
+<smd name="P" x="-1.525" y="0" dx="1.78" dy="1.27" layer="1" rot="R90"/>
+<smd name="N" x="1.525" y="0" dx="1.78" dy="1.27" layer="1" rot="R90"/>
+<wire x1="-2.7" y1="0.7" x2="-2.7" y2="-0.7" width="0.1016" layer="21"/>
+<wire x1="-2.7" y1="-0.7" x2="-2.4" y2="-1" width="0.1016" layer="21"/>
+<wire x1="-2.7" y1="0.7" x2="-2.4" y2="1" width="0.1016" layer="21"/>
+<wire x1="2.4" y1="1" x2="2.4" y2="-1" width="0.1016" layer="21"/>
+</package>
+<package name="B-3528">
+<smd name="P" x="-2.325" y="0" dx="1.8" dy="3" layer="1"/>
+<smd name="N" x="2.325" y="0" dx="1.8" dy="3" layer="1"/>
+<wire x1="-1.75" y1="1.4" x2="-1.25" y2="1.4" width="0.127" layer="48"/>
+<wire x1="-1.25" y1="1.4" x2="1.75" y2="1.4" width="0.127" layer="48"/>
+<wire x1="-1.75" y1="-1.4" x2="-1.25" y2="-1.4" width="0.127" layer="48"/>
+<wire x1="-1.25" y1="-1.4" x2="1.75" y2="-1.4" width="0.127" layer="48"/>
+<wire x1="-1.75" y1="1.4" x2="-1.75" y2="-1.4" width="0.127" layer="48"/>
+<wire x1="1.75" y1="1.4" x2="1.75" y2="-1.4" width="0.127" layer="48"/>
+<wire x1="-3.1825" y1="2" x2="-3.6825" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-3.6825" y1="1.5" x2="-3.6825" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3.6825" y1="-1.5" x2="-3.1825" y2="-2" width="0.127" layer="21"/>
+<wire x1="3.5" y1="2" x2="3.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="1.4" x2="-1.25" y2="-1.4" width="0.127" layer="48"/>
+<text x="-2.5" y="2" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3" y="-3.5" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP-WROOM-32">
@@ -967,6 +998,21 @@
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="-7.62" y="6.096" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="CAP-POLAR">
+<pin name="P" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="N" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="1.778" y="2.54" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="1.778" y="-1.778" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="0.508" x2="1.905" y2="1.016" layer="94"/>
+<wire x1="-2.54" y1="3.048" x2="-2.54" y2="2.032" width="0.127" layer="94"/>
+<wire x1="-3.048" y1="2.54" x2="-2.032" y2="2.54" width="0.127" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="2.032" x2="1.778" y2="2.032" width="0.254" layer="94"/>
+<wire x1="1.778" y1="2.032" x2="1.778" y2="1.397" width="0.254" layer="94"/>
+<wire x1="1.778" y1="1.397" x2="-1.778" y2="1.397" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="1.397" x2="-1.778" y2="2.032" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1319,6 +1365,31 @@ Datasheet: http://www.ti.com/lit/ds/symlink/reg1117.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CAP-POLAR" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="A3216" package="CAP-A3216">
+<connects>
+<connect gate="G$1" pin="N" pad="N"/>
+<connect gate="G$1" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CASEB-3528" package="B-3528">
+<connects>
+<connect gate="G$1" pin="N" pad="N"/>
+<connect gate="G$1" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -1519,8 +1590,6 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="C5" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
-<part name="C6" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
 <part name="D1" library="dr-library" deviceset="LED" device="1206"/>
 <part name="R3" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
@@ -1547,6 +1616,8 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <part name="U$8" library="dr-library" deviceset="SCHA4B0419" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="U2" library="dr-library" deviceset="REG-1117" device=""/>
+<part name="C5" library="dr-library" deviceset="CAP-POLAR" device="CASEB-3528" value="10uF"/>
+<part name="C6" library="dr-library" deviceset="CAP-POLAR" device="CASEB-3528" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -1584,8 +1655,6 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <instance part="GND5" gate="1" x="81.28" y="63.5"/>
 <instance part="GND1" gate="1" x="114.3" y="50.8"/>
 <instance part="+3V3" gate="G$1" x="114.3" y="88.9"/>
-<instance part="C5" gate="G$1" x="48.26" y="104.14"/>
-<instance part="C6" gate="G$1" x="83.82" y="104.14"/>
 <instance part="D1" gate="G$1" x="38.1" y="99.06" rot="R270"/>
 <instance part="R3" gate="G$1" x="38.1" y="109.22" rot="R90"/>
 <instance part="+3V4" gate="G$1" x="83.82" y="119.38"/>
@@ -1612,6 +1681,8 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <instance part="U$8" gate="G$1" x="25.4" y="-25.4"/>
 <instance part="GND12" gate="1" x="10.16" y="-43.18"/>
 <instance part="U2" gate="G$1" x="66.04" y="109.22"/>
+<instance part="C5" gate="G$1" x="48.26" y="104.14"/>
+<instance part="C6" gate="G$1" x="83.82" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -1677,10 +1748,8 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <wire x1="114.3" y1="63.5" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="101.6" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="96.52" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="99.06" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
@@ -1688,6 +1757,8 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="66.04" y1="96.52" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="C5" gate="G$1" pin="N"/>
+<pinref part="C6" gate="G$1" pin="N"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -1785,7 +1856,6 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <wire x1="81.28" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="111.76" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="109.22" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 <junction x="83.82" y="111.76"/>
 <pinref part="U2" gate="G$1" pin="VOUT"/>
@@ -1793,6 +1863,7 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <wire x1="78.74" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="109.22" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
 <junction x="81.28" y="111.76"/>
+<pinref part="C6" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="11"/>
@@ -1850,12 +1921,12 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="116.84" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="111.76" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
 <junction x="48.26" y="111.76"/>
 <pinref part="U2" gate="G$1" pin="VIN"/>
+<pinref part="C5" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
