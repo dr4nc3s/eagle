@@ -2218,7 +2218,7 @@ A3216/EIA3216</description>
 <wire x1="-5.7" y1="-2.35" x2="5.7" y2="-2.35" width="0.127" layer="48"/>
 <rectangle x1="-1.2" y1="-0.9" x2="1.2" y2="1.1" layer="21"/>
 <text x="-5.2" y="2.6" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.5" y="-3.9" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-5.2" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
