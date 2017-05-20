@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2217,8 +2217,34 @@ A3216/EIA3216</description>
 <wire x1="5.7" y1="2.35" x2="5.7" y2="-2.35" width="0.127" layer="48"/>
 <wire x1="-5.7" y1="-2.35" x2="5.7" y2="-2.35" width="0.127" layer="48"/>
 <rectangle x1="-1.2" y1="-0.9" x2="1.2" y2="1.1" layer="21"/>
-<text x="-5.2" y="2.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.2" y="1.4" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.2" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="LGA-10_6MM">
+<smd name="1" x="-1.25" y="1.2" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="PAD" x="0" y="0" dx="1.3" dy="2.5" layer="1"/>
+<wire x1="-1.35" y1="2" x2="1.35" y2="2" width="0.127" layer="48"/>
+<wire x1="-1.35" y1="2" x2="-1.35" y2="-2" width="0.127" layer="48"/>
+<wire x1="1.35" y1="2" x2="1.35" y2="-2" width="0.127" layer="48"/>
+<wire x1="-1.35" y1="-2" x2="1.35" y2="-2" width="0.127" layer="48"/>
+<smd name="2" x="-1.25" y="0.6" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="-1.25" y="0" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="4" x="-1.25" y="-0.6" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="5" x="-1.25" y="-1.2" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="6" x="1.25" y="-1.2" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="7" x="1.25" y="-0.6" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="8" x="1.25" y="0" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="9" x="1.25" y="0.6" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="10" x="1.25" y="1.2" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<wire x1="-1.35" y1="1.6" x2="-1.35" y2="2" width="0.127" layer="27"/>
+<wire x1="-1.35" y1="2" x2="1.35" y2="2" width="0.127" layer="27"/>
+<wire x1="1.35" y1="2" x2="1.35" y2="1.6" width="0.127" layer="27"/>
+<wire x1="-1.35" y1="-1.6" x2="-1.35" y2="-2" width="0.127" layer="27"/>
+<wire x1="-1.35" y1="-2" x2="1.35" y2="-2" width="0.127" layer="27"/>
+<wire x1="1.35" y1="-2" x2="1.35" y2="-1.6" width="0.127" layer="27"/>
+<circle x="-1.55" y="2.2" radius="0.111803125" width="0.127" layer="27"/>
 </package>
 </packages>
 <symbols>
@@ -5073,6 +5099,48 @@ http://www2.mouser.com/ProductDetail/ALPS/SCHA4B0419/?qs=sGAEpiMZZMuJakaoiLiBpsF
 <connect gate="G$1" pin="GND1" pad="G1"/>
 <connect gate="G$1" pin="GND2" pad="G2"/>
 <connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABLS-12MHZ-B2-T" prefix="Y" uservalue="yes">
+<description>Abracon 12MHz Crystal
+20ppm
+18pF Load Cap
+Manufacturer Part No. - ABLS-12.000MHZ-B2-T</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HC-49/US">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCP-1117" prefix="U">
+<description>ON Semiconductor Low Dropout Positive Voltage Regulator
+1A output
+
+Datasheet: http://www.mouser.com/ds/2/308/NCP1117LP-D-82673.pdf</description>
+<gates>
+<gate name="G$1" symbol="REG-1117" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-223-4">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="TAB" pad="PAD"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
