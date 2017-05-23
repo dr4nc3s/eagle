@@ -200,8 +200,6 @@
 <text x="27.94" y="11.43" size="1.27" layer="22" font="vector" ratio="20" rot="MR180" align="center">DRances</text>
 <text x="27.94" y="10.16" size="1.27" layer="22" font="vector" ratio="20" rot="MR180" align="center">ESP32 Breaakout v1</text>
 <text x="27.94" y="8.89" size="1.27" layer="22" font="vector" ratio="20" rot="MR180" align="center">May 15 2017</text>
-<dimension x1="0" y1="60.96" x2="0" y2="0" x3="-2.54" y3="30.48" textsize="1.778" layer="48" unit="inch" visible="yes"/>
-<dimension x1="0" y1="60.96" x2="53.34" y2="60.96" x3="26.67" y3="63.5" textsize="1.778" layer="48" unit="inch" visible="yes"/>
 </plain>
 <libraries>
 <library name="dr-library">
