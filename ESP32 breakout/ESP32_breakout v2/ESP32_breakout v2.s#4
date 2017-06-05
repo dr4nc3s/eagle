@@ -2408,6 +2408,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="3"/>
 <wire x1="172.72" y1="-30.48" x2="165.1" y2="-30.48" width="0.1524" layer="91"/>
+<label x="165.1" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -2483,6 +2484,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="4"/>
 <wire x1="172.72" y1="-27.94" x2="165.1" y2="-27.94" width="0.1524" layer="91"/>
+<label x="165.1" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -2575,6 +2577,8 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="-33.02" x2="165.1" y2="-33.02" width="0.1524" layer="91"/>
+<label x="165.1" y="-33.02" size="1.778" layer="95"/>
+<label x="165.1" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -2596,6 +2600,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="-35.56" x2="165.1" y2="-35.56" width="0.1524" layer="91"/>
+<label x="165.1" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IO14" class="0">
