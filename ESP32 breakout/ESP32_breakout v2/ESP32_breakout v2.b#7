@@ -149,6 +149,16 @@
 <wire x1="2.54" y1="55.88" x2="0" y2="53.34" width="0.1778" layer="21" curve="90"/>
 <wire x1="0" y1="53.34" x2="0" y2="2.54" width="0.1778" layer="21"/>
 <text x="50.165" y="8.89" size="0.762" layer="21" font="vector" ratio="20">D2</text>
+<text x="2.2225" y="47.9425" size="0.762" layer="21" font="vector" ratio="20" rot="R90">EN</text>
+<text x="2.2225" y="44.7675" size="0.762" layer="21" font="vector" ratio="20" rot="R90">SVN</text>
+<text x="2.2225" y="41.91" size="0.762" layer="21" font="vector" ratio="20" rot="R90">IO35</text>
+<text x="2.2225" y="39.37" size="0.762" layer="21" font="vector" ratio="20" rot="R90">IO26</text>
+<text x="2.2225" y="36.83" size="0.762" layer="21" font="vector" ratio="20" rot="R90">IO14</text>
+<text x="7.9375" y="37.7825" size="0.762" layer="21" font="vector" ratio="20">IO12</text>
+<text x="7.9375" y="40.3225" size="0.762" layer="21" font="vector" ratio="20">IO27</text>
+<text x="7.9375" y="42.8625" size="0.762" layer="21" font="vector" ratio="20">IO25</text>
+<text x="7.9375" y="45.4025" size="0.762" layer="21" font="vector" ratio="20">IO34</text>
+<text x="7.9375" y="47.9425" size="0.762" layer="21" font="vector" ratio="20">SVP</text>
 </plain>
 <libraries>
 <library name="dr-library">

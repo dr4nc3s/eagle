@@ -174,6 +174,21 @@
 <text x="2.2225" y="12.065" size="0.762" layer="21" font="vector" ratio="20" rot="R90">IO5</text>
 <text x="2.2225" y="9.2075" size="0.762" layer="21" font="vector" ratio="20" rot="R90">IO19</text>
 <text x="2.2225" y="6.35" size="0.762" layer="21" font="vector" ratio="20" rot="R90">IO22</text>
+<text x="7.9375" y="17.4625" size="0.762" layer="21" font="vector" ratio="20">IO4</text>
+<text x="7.9375" y="14.9225" size="0.762" layer="21" font="vector" ratio="20">IO17</text>
+<text x="7.9375" y="12.3825" size="0.762" layer="21" font="vector" ratio="20">IO18</text>
+<text x="7.9375" y="9.8425" size="0.762" layer="21" font="vector" ratio="20">IO21</text>
+<text x="7.9375" y="7.3025" size="0.762" layer="21" font="vector" ratio="20">IO23</text>
+<text x="64.4525" y="48.5775" size="0.762" layer="21" font="vector" ratio="20" rot="R180">3V3</text>
+<text x="64.4525" y="46.0375" size="0.762" layer="21" font="vector" ratio="20" rot="R180">GND</text>
+<text x="64.4525" y="43.4975" size="0.762" layer="21" font="vector" ratio="20" rot="R180">TX</text>
+<text x="64.4525" y="40.9575" size="0.762" layer="21" font="vector" ratio="20" rot="R180">RX</text>
+<text x="33.02" y="4.445" size="1.27" layer="21" font="vector" ratio="20">VCC</text>
+<text x="45.72" y="4.445" size="1.27" layer="21" font="vector" ratio="20">3V3</text>
+<text x="33.02" y="1.905" size="1.27" layer="21" font="vector" ratio="20">GND</text>
+<text x="45.72" y="1.905" size="1.27" layer="21" font="vector" ratio="20">GND</text>
+<text x="11.7475" y="42.2275" size="1.27" layer="21" font="vector" ratio="20">RESET</text>
+<text x="54.9275" y="42.545" size="1.27" layer="21" font="vector" ratio="20">BOOT</text>
 </plain>
 <libraries>
 <library name="dr-library">
