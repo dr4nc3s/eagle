@@ -2735,8 +2735,8 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <pinref part="U$3" gate="G$1" pin="11"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="5.08" x2="193.04" y2="5.08" width="0.1524" layer="91"/>
-<label x="193.04" y="5.08" size="1.778" layer="95" font="vector"/>
+<wire x1="200.66" y1="0" x2="193.04" y2="0" width="0.1524" layer="91"/>
+<label x="193.04" y="0" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="IO23" class="0">
@@ -2755,8 +2755,8 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <pinref part="U$3" gate="G$1" pin="12"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="7.62" x2="193.04" y2="7.62" width="0.1524" layer="91"/>
-<label x="193.04" y="7.62" size="1.778" layer="95" font="vector"/>
+<wire x1="200.66" y1="2.54" x2="193.04" y2="2.54" width="0.1524" layer="91"/>
+<label x="193.04" y="2.54" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="IO17" class="0">

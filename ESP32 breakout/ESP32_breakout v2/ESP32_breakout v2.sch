@@ -1852,7 +1852,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="EmbeddedAdventures 3" deviceset="JACK-PLUG" device="0"/>
-<part name="U$16" library="EmbeddedAdventures 3" deviceset="DIODE-10BQ015PBF" device=""/>
+<part name="D2" library="EmbeddedAdventures 3" deviceset="DIODE-10BQ015PBF" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="U$17" library="dr-library" deviceset="M10" device="2X05"/>
@@ -1927,7 +1927,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <instance part="GND13" gate="1" x="139.7" y="0"/>
 <instance part="GND14" gate="1" x="139.7" y="-20.32"/>
 <instance part="J1" gate="G$1" x="-5.08" y="114.3"/>
-<instance part="U$16" gate="G$1" x="7.62" y="116.84"/>
+<instance part="D2" gate="G$1" x="7.62" y="116.84"/>
 <instance part="P+5" gate="VCC" x="17.78" y="124.46"/>
 <instance part="GND15" gate="1" x="17.78" y="91.44"/>
 <instance part="U$17" gate="G$1" x="83.82" y="2.54" rot="R180"/>
@@ -2227,7 +2227,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="139.7" y1="7.62" x2="139.7" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$16" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="10.16" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="116.84" x2="17.78" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
@@ -2870,13 +2870,22 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
-<pinref part="U$16" gate="G$1" pin="A"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="0" y1="116.84" x2="5.08" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,53.34,111.76,U2,VIN,VCC,,,"/>
+<approved hash="104,1,78.74,111.76,U2,VOUT,+3V3,,,"/>
+<approved hash="104,1,78.74,109.22,U2,TAB,+3V3,,,"/>
+<approved hash="113,1,-20.2777,66.04,S1,,,,,"/>
+<approved hash="113,1,111.802,63.5,S2,,,,,"/>
+<approved hash="113,1,39.2769,97.79,D1,,,,,"/>
+<approved hash="113,1,-4.48733,115.816,J1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
