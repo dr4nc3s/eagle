@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.6" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2222,7 +2222,7 @@ A3216/EIA3216</description>
 </package>
 <package name="LGA-10_6MM">
 <smd name="1" x="-1.25" y="1.2" dx="0.4" dy="0.7" layer="1" rot="R90"/>
-<smd name="P$1" x="0" y="0" dx="1.3" dy="2.5" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="1.3" dy="2.5" layer="1"/>
 <wire x1="-1.35" y1="2" x2="1.35" y2="2" width="0.127" layer="48"/>
 <wire x1="-1.35" y1="2" x2="-1.35" y2="-2" width="0.127" layer="48"/>
 <wire x1="1.35" y1="2" x2="1.35" y2="-2" width="0.127" layer="48"/>
@@ -2236,6 +2236,15 @@ A3216/EIA3216</description>
 <smd name="8" x="1.25" y="0" dx="0.4" dy="0.7" layer="1" rot="R90"/>
 <smd name="9" x="1.25" y="0.6" dx="0.4" dy="0.7" layer="1" rot="R90"/>
 <smd name="10" x="1.25" y="1.2" dx="0.4" dy="0.7" layer="1" rot="R90"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<wire x1="-1.35" y1="1.6" x2="-1.35" y2="2" width="0.127" layer="27"/>
+<wire x1="-1.35" y1="2" x2="1.35" y2="2" width="0.127" layer="27"/>
+<wire x1="1.35" y1="2" x2="1.35" y2="1.6" width="0.127" layer="27"/>
+<wire x1="-1.35" y1="-1.6" x2="-1.35" y2="-2" width="0.127" layer="27"/>
+<wire x1="-1.35" y1="-2" x2="1.35" y2="-2" width="0.127" layer="27"/>
+<wire x1="1.35" y1="-2" x2="1.35" y2="-1.6" width="0.127" layer="27"/>
+<circle x="-1.7" y="2.3" radius="0.282840625" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
