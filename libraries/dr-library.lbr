@@ -2371,6 +2371,15 @@ A3216/EIA3216</description>
 <text x="2.44" y="9.49" size="0.762" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <smd name="P$1" x="0" y="0" dx="18" dy="18" layer="1" roundness="25"/>
 </package>
+<package name="TOUCH-10MMX10MM">
+<wire x1="-4.855" y1="4.855" x2="4.855" y2="4.855" width="0.127" layer="48"/>
+<wire x1="-4.855" y1="4.855" x2="-4.855" y2="-4.855" width="0.127" layer="48"/>
+<wire x1="4.855" y1="4.855" x2="4.855" y2="-4.855" width="0.127" layer="48"/>
+<wire x1="-4.855" y1="-4.855" x2="4.855" y2="-4.855" width="0.127" layer="48"/>
+<text x="-4.945" y="5.045" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-5.18" y="-5.75" size="0.762" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<smd name="P$1" x="0" y="0" dx="9" dy="9" layer="1" roundness="25"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP32">
@@ -5405,6 +5414,14 @@ Series Reference</description>
 </gates>
 <devices>
 <device name="-20MMX20MM" package="TOUCH-20MMX20MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-10MMX10MM" package="TOUCH-10MMX10MM">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>

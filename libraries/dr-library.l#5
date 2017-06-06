@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2363,13 +2363,13 @@ A3216/EIA3216</description>
 <wire x1="1.4" y1="0.7" x2="-1.4" y2="0.7" width="0.06" layer="27"/>
 </package>
 <package name="TOUCH-20MMX20MM">
-<wire x1="-8.5" y1="8.5" x2="8.5" y2="8.5" width="0.127" layer="48"/>
-<wire x1="-8.5" y1="8.5" x2="-8.5" y2="-8.5" width="0.127" layer="48"/>
-<wire x1="8.5" y1="8.5" x2="8.5" y2="-8.5" width="0.127" layer="48"/>
-<wire x1="-8.5" y1="-8.5" x2="8.5" y2="-8.5" width="0.127" layer="48"/>
-<text x="-5.08" y="8.89" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="2.54" y="8.89" size="0.762" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<smd name="P$1" x="0" y="0" dx="16" dy="16" layer="1" roundness="25"/>
+<wire x1="-9.3" y1="9.3" x2="9.3" y2="9.3" width="0.127" layer="48"/>
+<wire x1="-9.3" y1="9.3" x2="-9.3" y2="-9.3" width="0.127" layer="48"/>
+<wire x1="9.3" y1="9.3" x2="9.3" y2="-9.3" width="0.127" layer="48"/>
+<wire x1="-9.3" y1="-9.3" x2="9.3" y2="-9.3" width="0.127" layer="48"/>
+<text x="-5.58" y="9.49" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="2.44" y="9.49" size="0.762" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<smd name="P$1" x="0" y="0" dx="18" dy="18" layer="1" roundness="25"/>
 </package>
 </packages>
 <symbols>
@@ -3437,6 +3437,10 @@ A3216/EIA3216</description>
 <wire x1="12.7" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
 <text x="-2.54" y="10.16" size="1.27" layer="95" font="vector" ratio="20">&gt;NAME</text>
 <text x="8.89" y="-5.08" size="1.27" layer="96" font="vector" ratio="20">&gt;VALUE</text>
+</symbol>
+<symbol name="TOUCHPAD">
+<pin name="1" x="-5.08" y="0" visible="pin" length="short"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
