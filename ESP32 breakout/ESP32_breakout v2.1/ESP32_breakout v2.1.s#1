@@ -719,48 +719,6 @@ A3216/EIA3216</description>
 <pad name="10" x="8.89" y="0" drill="1.016" diameter="2.032" rot="R90"/>
 <rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
 </package>
-<package name="1X04">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" diameter="2.032" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.016" diameter="2.032" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="3" x="3.81" y="0" drill="1.016" diameter="2.032" rot="R90"/>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="4" x="6.35" y="0" drill="1.016" diameter="2.032" rot="R90"/>
-<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
-</package>
 <package name="TOUCH-20MMX20MM">
 <wire x1="-9.3" y1="9.3" x2="9.3" y2="9.3" width="0.127" layer="48"/>
 <wire x1="-9.3" y1="9.3" x2="-9.3" y2="-9.3" width="0.127" layer="48"/>
@@ -769,6 +727,15 @@ A3216/EIA3216</description>
 <text x="-5.58" y="9.49" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="2.44" y="9.49" size="0.762" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <smd name="P$1" x="0" y="0" dx="18" dy="18" layer="1" roundness="25"/>
+</package>
+<package name="TOUCH-10MMX10MM">
+<wire x1="-4.855" y1="4.855" x2="4.855" y2="4.855" width="0.127" layer="48"/>
+<wire x1="-4.855" y1="4.855" x2="-4.855" y2="-4.855" width="0.127" layer="48"/>
+<wire x1="4.855" y1="4.855" x2="4.855" y2="-4.855" width="0.127" layer="48"/>
+<wire x1="-4.855" y1="-4.855" x2="4.855" y2="-4.855" width="0.127" layer="48"/>
+<text x="-4.945" y="5.045" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-5.18" y="-5.75" size="0.762" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<smd name="P$1" x="0" y="0" dx="9" dy="9" layer="1" roundness="25"/>
 </package>
 </packages>
 <symbols>
@@ -990,26 +957,6 @@ A3216/EIA3216</description>
 <pin name="10" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
 <wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-</symbol>
-<symbol name="1X04">
-<pin name="1" x="5.08" y="7.62" visible="off" length="short" rot="R180"/>
-<pin name="2" x="5.08" y="5.08" visible="off" length="short" rot="R180"/>
-<wire x1="-2.54" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
-<wire x1="2.54" y1="10.16" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="0" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<text x="-2.54" y="10.414" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-4.318" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
-<pin name="3" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
-<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<pin name="4" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="TOUCHPAD">
 <pin name="1" x="-5.08" y="0" visible="pin" length="short"/>
@@ -1392,30 +1339,20 @@ Manufacturer Part No. - ABLS-12.000MHZ-B2-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M04">
-<gates>
-<gate name="G$1" symbol="1X04" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X04">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TOUCHPAD" prefix="C">
 <gates>
 <gate name="G$1" symbol="TOUCHPAD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-20MMX20MM" package="TOUCH-20MMX20MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-10MMX10MM" package="TOUCH-10MMX10MM">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
@@ -1852,7 +1789,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="D1" library="dr-library" deviceset="LED" device="1206"/>
-<part name="R3" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R3" library="dr-library" deviceset="RESISTOR" device="0805" value="330"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
@@ -1888,15 +1825,14 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="U$17" library="dr-library" deviceset="M10" device="2X05"/>
 <part name="U$5" library="dr-library" deviceset="M10" device="2X05"/>
 <part name="U$2" library="dr-library" deviceset="M10" device="2X05"/>
-<part name="U$10" library="dr-library" deviceset="M04" device=""/>
-<part name="C10" library="dr-library" deviceset="TOUCHPAD" device="-20MMX20MM"/>
-<part name="C11" library="dr-library" deviceset="TOUCHPAD" device="-20MMX20MM"/>
-<part name="C12" library="dr-library" deviceset="TOUCHPAD" device="-20MMX20MM"/>
-<part name="C13" library="dr-library" deviceset="TOUCHPAD" device="-20MMX20MM"/>
-<part name="C14" library="dr-library" deviceset="TOUCHPAD" device="-20MMX20MM"/>
-<part name="C15" library="dr-library" deviceset="TOUCHPAD" device="-20MMX20MM"/>
-<part name="C16" library="dr-library" deviceset="TOUCHPAD" device="-20MMX20MM"/>
-<part name="C17" library="dr-library" deviceset="TOUCHPAD" device="-20MMX20MM"/>
+<part name="C10" library="dr-library" deviceset="TOUCHPAD" device="-10MMX10MM" value="TOUCHPAD-10MMX10MM"/>
+<part name="C11" library="dr-library" deviceset="TOUCHPAD" device="-10MMX10MM" value="TOUCHPAD-10MMX10MM"/>
+<part name="C12" library="dr-library" deviceset="TOUCHPAD" device="-10MMX10MM" value="TOUCHPAD-10MMX10MM"/>
+<part name="C13" library="dr-library" deviceset="TOUCHPAD" device="-10MMX10MM" value="TOUCHPAD-10MMX10MM"/>
+<part name="C14" library="dr-library" deviceset="TOUCHPAD" device="-10MMX10MM" value="TOUCHPAD-10MMX10MM"/>
+<part name="C15" library="dr-library" deviceset="TOUCHPAD" device="-10MMX10MM" value="TOUCHPAD-10MMX10MM"/>
+<part name="C16" library="dr-library" deviceset="TOUCHPAD" device="-10MMX10MM" value="TOUCHPAD-10MMX10MM"/>
+<part name="C17" library="dr-library" deviceset="TOUCHPAD" device="-10MMX10MM" value="TOUCHPAD-10MMX10MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -1972,7 +1908,6 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <instance part="U$17" gate="G$1" x="93.98" y="2.54" rot="R180"/>
 <instance part="U$5" gate="G$1" x="187.96" y="2.54" rot="R180"/>
 <instance part="U$2" gate="G$1" x="215.9" y="-2.54" rot="R180"/>
-<instance part="U$10" gate="G$1" x="187.96" y="-27.94" rot="R180"/>
 <instance part="C10" gate="G$1" x="-30.48" y="33.02" rot="R180"/>
 <instance part="C11" gate="G$1" x="-30.48" y="25.4" rot="R180"/>
 <instance part="C12" gate="G$1" x="-30.48" y="17.78" rot="R180"/>
@@ -2137,7 +2072,6 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <segment>
 <wire x1="182.88" y1="-30.48" x2="175.26" y2="-30.48" width="0.1524" layer="91"/>
 <label x="175.26" y="-30.48" size="1.778" layer="95"/>
-<pinref part="U$10" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -2213,7 +2147,6 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <segment>
 <wire x1="182.88" y1="-27.94" x2="175.26" y2="-27.94" width="0.1524" layer="91"/>
 <label x="175.26" y="-27.94" size="1.778" layer="95"/>
-<pinref part="U$10" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -2306,7 +2239,6 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="182.88" y1="-33.02" x2="175.26" y2="-33.02" width="0.1524" layer="91"/>
 <label x="175.26" y="-33.02" size="1.778" layer="95"/>
 <label x="175.26" y="-33.02" size="1.778" layer="95"/>
-<pinref part="U$10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -2327,7 +2259,6 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <segment>
 <wire x1="182.88" y1="-35.56" x2="175.26" y2="-35.56" width="0.1524" layer="91"/>
 <label x="175.26" y="-35.56" size="1.778" layer="95"/>
-<pinref part="U$10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="IO14/T6" class="0">
