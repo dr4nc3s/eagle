@@ -2293,8 +2293,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="C5" library="dr-library" deviceset="CAP-POLAR" device="CASEB-3528" value="10uF"/>
 <part name="C6" library="dr-library" deviceset="CAP-POLAR" device="CASEB-3528" value="10uF"/>
 <part name="Y1" library="dr-library" deviceset="ABLS-12MHZ-B2-T" device="" value="12MHz"/>
-<part name="U$1" library="dr-library" deviceset="M02" device="LONG"/>
-<part name="U$9" library="dr-library" deviceset="M02" device="LONG"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -2415,8 +2413,6 @@ Header</text>
 <instance part="C5" gate="G$1" x="53.34" y="223.52"/>
 <instance part="C6" gate="G$1" x="88.9" y="223.52"/>
 <instance part="Y1" gate="G$1" x="180.34" y="134.62"/>
-<instance part="U$1" gate="G$1" x="109.22" y="231.14" rot="R180"/>
-<instance part="U$9" gate="G$1" x="132.08" y="231.14" rot="R180"/>
 <instance part="P+4" gate="VCC" x="101.6" y="238.76"/>
 <instance part="+3V6" gate="G$1" x="124.46" y="238.76"/>
 <instance part="GND13" gate="1" x="101.6" y="223.52"/>
@@ -2459,8 +2455,8 @@ Header</text>
 <instance part="JP1" gate="G$1" x="299.72" y="109.22" rot="R180"/>
 <instance part="JP2" gate="G$1" x="325.12" y="114.3" rot="R180"/>
 <instance part="JP3" gate="G$1" x="345.44" y="114.3" rot="R180"/>
-<instance part="JP4" gate="G$1" x="109.22" y="213.36" rot="R180"/>
-<instance part="JP5" gate="G$1" x="132.08" y="215.9" rot="R180"/>
+<instance part="JP4" gate="G$1" x="109.22" y="231.14" rot="R180"/>
+<instance part="JP5" gate="G$1" x="132.08" y="231.14" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2589,16 +2585,16 @@ Header</text>
 <label x="200.66" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="1"/>
 <wire x1="127" y1="228.6" x2="124.46" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="124.46" y1="228.6" x2="124.46" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="228.6" x2="101.6" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="101.6" y1="228.6" x2="101.6" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -2693,10 +2689,10 @@ Header</text>
 <label x="200.66" y="228.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="2"/>
 <wire x1="127" y1="231.14" x2="124.46" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <wire x1="124.46" y1="231.14" x2="124.46" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
@@ -2771,10 +2767,10 @@ Header</text>
 <wire x1="160.02" y1="152.4" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="231.14" x2="101.6" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="101.6" y1="231.14" x2="101.6" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>

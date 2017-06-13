@@ -1541,7 +1541,7 @@ Mouser Product # 688-SKHMQME010</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SCHA4B0419">
+<deviceset name="SCHA4B0419" prefix="J">
 <description>ALPS MicroSD Connector
 Manufacturer No. SCHA4B0419
 http://www2.mouser.com/ProductDetail/ALPS/SCHA4B0419/?qs=sGAEpiMZZMuJakaoiLiBpsFSICW6cUCj0ci6XSEAGXcTwv1T7afZMw%3d%3d</description>
@@ -1635,7 +1635,7 @@ Manufacturer Part No. - ABLS-12.000MHZ-B2-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M02">
+<deviceset name="M02" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X02" x="0" y="0"/>
 </gates>
@@ -1660,7 +1660,7 @@ Manufacturer Part No. - ABLS-12.000MHZ-B2-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M10">
+<deviceset name="M10" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X10" x="0" y="5.08"/>
 </gates>
@@ -1724,7 +1724,7 @@ Manufacturer Part No. - ABLS-12.000MHZ-B2-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M12">
+<deviceset name="M12" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X12" x="0" y="7.62"/>
 </gates>

@@ -3295,6 +3295,7 @@ Header</text>
 <segment>
 <pinref part="U$7" gate="G$1" pin="D-"/>
 <wire x1="190.5" y1="147.32" x2="185.42" y2="147.32" width="0.1524" layer="91"/>
+<label x="185.42" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D+" class="0">
@@ -3307,7 +3308,6 @@ Header</text>
 <pinref part="U$7" gate="G$1" pin="D+"/>
 <wire x1="190.5" y1="149.86" x2="185.42" y2="149.86" width="0.1524" layer="91"/>
 <label x="185.42" y="149.86" size="1.778" layer="95"/>
-<label x="185.42" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -3374,14 +3374,6 @@ Header</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,53.34,111.76,U2,VIN,VCC,,,"/>
-<approved hash="104,1,78.74,111.76,U2,VOUT,+3V3,,,"/>
-<approved hash="104,1,78.74,109.22,U2,TAB,+3V3,,,"/>
-<approved hash="113,1,-20.2777,66.04,S1,,,,,"/>
-<approved hash="113,1,111.802,63.5,S2,,,,,"/>
-<approved hash="113,1,-4.48733,115.816,J1,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>

@@ -2327,7 +2327,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="Q3" library="dr-library" deviceset="BSS84" device=""/>
-<part name="J2" library="dr-library" deviceset="JUMPER_2-WAY" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
 <part name="C18" library="dr-library" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="JP1" library="dr-library" deviceset="M12" device="2ROWS"/>
@@ -2448,7 +2447,6 @@ Header</text>
 <instance part="GND19" gate="1" x="154.94" y="12.7"/>
 <instance part="+3V10" gate="G$1" x="154.94" y="63.5"/>
 <instance part="Q3" gate="G$1" x="154.94" y="48.26"/>
-<instance part="J2" gate="G$1" x="144.78" y="58.42" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="287.02" y="0"/>
 <instance part="C18" gate="G$1" x="160.02" y="144.78"/>
@@ -2458,7 +2456,7 @@ Header</text>
 <instance part="JP4" gate="G$1" x="109.22" y="231.14" rot="R180"/>
 <instance part="JP5" gate="G$1" x="132.08" y="231.14" rot="R180"/>
 <instance part="J3" gate="G$1" x="187.96" y="228.6"/>
-<instance part="JP6" gate="G$1" x="144.78" y="76.2" rot="R180"/>
+<instance part="JP6" gate="G$1" x="144.78" y="58.42" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2970,9 +2968,9 @@ Header</text>
 <pinref part="JP1" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
 <label x="132.08" y="58.42" size="1.778" layer="95"/>
+<pinref part="JP6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="IO21" class="0">
@@ -3368,22 +3366,14 @@ Header</text>
 <label x="142.24" y="45.72" size="1.778" layer="95" font="vector" ratio="20"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
 <label x="132.08" y="55.88" size="1.778" layer="95"/>
+<pinref part="JP6" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,53.34,111.76,U2,VIN,VCC,,,"/>
-<approved hash="104,1,78.74,111.76,U2,VOUT,+3V3,,,"/>
-<approved hash="104,1,78.74,109.22,U2,TAB,+3V3,,,"/>
-<approved hash="113,1,-20.2777,66.04,S1,,,,,"/>
-<approved hash="113,1,111.802,63.5,S2,,,,,"/>
-<approved hash="113,1,-4.48733,115.816,J1,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>

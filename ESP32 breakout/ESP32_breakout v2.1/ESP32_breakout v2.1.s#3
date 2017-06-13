@@ -1812,7 +1812,7 @@ http://www.mouser.com/ds/2/149/BSS84-1006729.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JUMPER_2-WAY" prefix="J">
+<deviceset name="JUMPER_2-WAY" prefix="JP">
 <gates>
 <gate name="G$1" symbol="JUMP_1X02" x="-2.54" y="-2.54"/>
 </gates>
@@ -2336,6 +2336,8 @@ DIN A3, landscape with extra doc field</description>
 <part name="JP3" library="dr-library" deviceset="M10" device="2X05"/>
 <part name="JP4" library="dr-library" deviceset="M02" device="LONG"/>
 <part name="JP5" library="dr-library" deviceset="M02" device="LONG"/>
+<part name="J3" library="dr-library" deviceset="SCHA4B0419" device=""/>
+<part name="JP6" library="dr-library" deviceset="JUMPER_2-WAY" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2457,6 +2459,8 @@ Header</text>
 <instance part="JP3" gate="G$1" x="345.44" y="114.3" rot="R180"/>
 <instance part="JP4" gate="G$1" x="109.22" y="231.14" rot="R180"/>
 <instance part="JP5" gate="G$1" x="132.08" y="231.14" rot="R180"/>
+<instance part="J3" gate="G$1" x="220.98" y="226.06"/>
+<instance part="JP6" gate="G$1" x="144.78" y="76.2" rot="R180"/>
 </instances>
 <busses>
 </busses>
