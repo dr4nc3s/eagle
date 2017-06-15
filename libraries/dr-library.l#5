@@ -3615,6 +3615,18 @@ A3216/EIA3216</description>
 <text x="-7.62" y="6.096" size="1.27" layer="95" font="vector" ratio="20">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.27" layer="96" font="vector" ratio="20">&gt;VALUE</text>
 </symbol>
+<symbol name="SPDT">
+<pin name="2" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="OUT" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="1" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
+<wire x1="0" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.567959375" width="0.254" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.567959375" width="0.254" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.567959375" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.778" x2="2.54" y2="-0.254" width="0.127" layer="94" curve="-90"/>
+<wire x1="2.54" y1="-0.254" x2="2.286" y2="0" width="0.127" layer="94"/>
+<wire x1="2.54" y1="-0.254" x2="2.794" y2="0" width="0.127" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="XBEE_S2C_PTH" prefix="U">
@@ -5116,7 +5128,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M02">
+<deviceset name="M02" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X02" x="0" y="0"/>
 </gates>
@@ -5141,7 +5153,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M03">
+<deviceset name="M03" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X03" x="0" y="0"/>
 </gates>
@@ -5158,7 +5170,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M04">
+<deviceset name="M04" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X04" x="0" y="0"/>
 </gates>
@@ -5176,7 +5188,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M05">
+<deviceset name="M05" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X05" x="0" y="0"/>
 </gates>
@@ -5195,7 +5207,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M06">
+<deviceset name="M06" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X06" x="0" y="0"/>
 </gates>
@@ -5215,7 +5227,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M07">
+<deviceset name="M07" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X07" x="0" y="0"/>
 </gates>
@@ -5236,7 +5248,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M08">
+<deviceset name="M08" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X08" x="0" y="0"/>
 </gates>
@@ -5258,7 +5270,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M10">
+<deviceset name="M10" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X10" x="0" y="5.08"/>
 </gates>
@@ -5299,7 +5311,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M12">
+<deviceset name="M12" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X12" x="0" y="7.62"/>
 </gates>
@@ -5344,7 +5356,7 @@ M50 Series
 </device>
 </devices>
 </deviceset>
-<deviceset name="M09">
+<deviceset name="M09" prefix="JP">
 <gates>
 <gate name="G$1" symbol="1X09" x="0" y="0"/>
 </gates>
@@ -5431,7 +5443,7 @@ Load Capacitancce 12pF</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SCHA4B0419">
+<deviceset name="SCHA4B0419" prefix="J">
 <description>ALPS MicroSD Connector
 Manufacturer No. SCHA4B0419
 http://www2.mouser.com/ProductDetail/ALPS/SCHA4B0419/?qs=sGAEpiMZZMuJakaoiLiBpsFSICW6cUCj0ci6XSEAGXcTwv1T7afZMw%3d%3d</description>
@@ -5658,7 +5670,7 @@ http://www.mouser.com/ds/2/149/BSS84-1006729.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JUMPER_3-WAY" prefix="J">
+<deviceset name="JUMPER_3-WAY" prefix="JP">
 <gates>
 <gate name="G$1" symbol="JUMP_1X03" x="0" y="-2.54"/>
 </gates>
@@ -5675,7 +5687,7 @@ http://www.mouser.com/ds/2/149/BSS84-1006729.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JUMPER_2-WAY" prefix="J">
+<deviceset name="JUMPER_2-WAY" prefix="JP">
 <gates>
 <gate name="G$1" symbol="JUMP_1X02" x="-2.54" y="-2.54"/>
 </gates>
