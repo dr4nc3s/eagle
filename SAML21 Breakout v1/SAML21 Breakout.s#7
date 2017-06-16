@@ -1310,10 +1310,14 @@ Series Reference</description>
 <part name="C14" library="dr-library" deviceset="CAP" device="0603" value="1uF"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$1" library="dr-library" deviceset="M03" device=""/>
+<part name="VREF_EN" library="dr-library" deviceset="M03" device=""/>
 <part name="R4" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="C15" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
+<part name="C16" library="dr-library" deviceset="CAP" device="0603" value="100nF"/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="U$1" library="dr-library" deviceset="M03" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1367,10 +1371,14 @@ Series Reference</description>
 <instance part="C14" gate="G$1" x="88.9" y="5.08"/>
 <instance part="GND12" gate="1" x="111.76" y="-7.62"/>
 <instance part="+3V9" gate="G$1" x="88.9" y="22.86"/>
-<instance part="U$1" gate="G$1" x="144.78" y="15.24" rot="R180"/>
+<instance part="VREF_EN" gate="G$1" x="144.78" y="15.24" rot="R180"/>
 <instance part="R4" gate="G$1" x="137.16" y="2.54" rot="R90"/>
 <instance part="+3V10" gate="G$1" x="137.16" y="25.4"/>
 <instance part="GND13" gate="1" x="137.16" y="-7.62"/>
+<instance part="C15" gate="G$1" x="99.06" y="-25.4"/>
+<instance part="C16" gate="G$1" x="109.22" y="-25.4"/>
+<instance part="GND14" gate="1" x="104.14" y="-35.56"/>
+<instance part="U$1" gate="G$1" x="144.78" y="-22.86" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1522,6 +1530,17 @@ Series Reference</description>
 <wire x1="137.16" y1="-2.54" x2="137.16" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="-27.94" x2="99.06" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-30.48" x2="104.14" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="-30.48" x2="109.22" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-30.48" x2="109.22" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-30.48" x2="104.14" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="104.14" y="-30.48"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -1634,7 +1653,7 @@ Series Reference</description>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="3"/>
+<pinref part="VREF_EN" gate="G$1" pin="3"/>
 <wire x1="139.7" y1="15.24" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="15.24" x2="137.16" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
@@ -1739,23 +1758,21 @@ Series Reference</description>
 <wire x1="81.28" y1="83.82" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="2.5V" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PA03"/>
-<wire x1="10.16" y1="38.1" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
-<label x="2.54" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VREF" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="OUT"/>
-<wire x1="124.46" y1="15.24" x2="129.54" y2="15.24" width="0.1524" layer="91"/>
-<label x="124.46" y="15.24" size="1.778" layer="95"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="-20.32" x2="109.22" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-17.78" x2="99.06" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="-17.78" x2="99.06" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-17.78" x2="93.98" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="99.06" y="-17.78"/>
+<label x="93.98" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SHDN" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<pinref part="VREF_EN" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="12.7" x2="134.62" y2="12.7" width="0.1524" layer="91"/>
 <label x="134.62" y="12.7" size="1.778" layer="95"/>
 </segment>
@@ -1767,10 +1784,42 @@ Series Reference</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="1"/>
+<pinref part="VREF_EN" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="10.16" x2="137.16" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="10.16" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="2.5V" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="OUT"/>
+<wire x1="124.46" y1="15.24" x2="129.54" y2="15.24" width="0.1524" layer="91"/>
+<label x="124.46" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="3"/>
+<wire x1="139.7" y1="-22.86" x2="132.08" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="-25.4" x2="132.08" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="-27.94" x2="132.08" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VREF/PA3" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA03"/>
+<wire x1="10.16" y1="38.1" x2="0" y2="38.1" width="0.1524" layer="91"/>
+<label x="0" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

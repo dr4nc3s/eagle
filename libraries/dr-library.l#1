@@ -143,8 +143,8 @@
 <package name="CAP-0603">
 <smd name="1" x="-0.889" y="0" dx="1" dy="1" layer="1"/>
 <smd name="2" x="0.889" y="0" dx="1" dy="1" layer="1"/>
-<text x="-1.5" y="0.75" size="0.3" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.55" y="-1.2" size="0.5" layer="25" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-1.5" y="0.75" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.55" y="-1.2" size="0.762" layer="25" font="vector" ratio="20">&gt;VALUE</text>
 <wire x1="-0.7" y1="0.4" x2="0.7" y2="0.4" width="0.05" layer="48"/>
 <wire x1="0.7" y1="0.4" x2="0.7" y2="-0.4" width="0.05" layer="48"/>
 <wire x1="0.7" y1="-0.4" x2="-0.7" y2="-0.4" width="0.05" layer="48"/>
@@ -5733,7 +5733,17 @@ http://www.mouser.com/ds/2/149/BSS84-1006729.pdf</description>
 <gate name="G$1" symbol="SPDT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X03">
+<device name="1X03" package="1X03">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SW" package="SPDT_TH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
