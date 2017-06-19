@@ -68,8 +68,8 @@
 <package name="CAP-0603">
 <smd name="1" x="-0.889" y="0" dx="1" dy="1" layer="1"/>
 <smd name="2" x="0.889" y="0" dx="1" dy="1" layer="1"/>
-<text x="-1.5" y="0.75" size="0.3" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.55" y="-1.2" size="0.5" layer="25" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-1.5" y="0.75" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.55" y="-1.835" size="0.762" layer="25" font="vector" ratio="20">&gt;VALUE</text>
 <wire x1="-0.7" y1="0.4" x2="0.7" y2="0.4" width="0.05" layer="48"/>
 <wire x1="0.7" y1="0.4" x2="0.7" y2="-0.4" width="0.05" layer="48"/>
 <wire x1="0.7" y1="-0.4" x2="-0.7" y2="-0.4" width="0.05" layer="48"/>
@@ -520,8 +520,8 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="C1" library="dr-library" package="CAP-0603" value="100nF" x="-38.1" y="41.91"/>
-<element name="C10" library="dr-library" package="CAP-0603" value="15pF" x="66.04" y="32.385" rot="R180"/>
-<element name="C11" library="dr-library" package="CAP-0603" value="15pF" x="66.04" y="34.925" rot="R180"/>
+<element name="C10" library="dr-library" package="CAP-0603" value="15pF" x="59.69" y="29.21" rot="R90"/>
+<element name="C11" library="dr-library" package="CAP-0603" value="15pF" x="62.23" y="29.21" rot="R90"/>
 <element name="C12" library="dr-library" package="CAP-0603" value="4.7uF" x="26.035" y="17.78" rot="R90"/>
 <element name="C13" library="dr-library" package="CAP-0603" value="4.7uF" x="34.925" y="17.78" rot="R90"/>
 <element name="C14" library="dr-library" package="CAP-0603" value="1uF" x="-49.53" y="48.26"/>
@@ -550,7 +550,7 @@ design rules under a new name.</description>
 <element name="U2" library="dr-library" package="SOT-223-3" value="AP7361C-33E-13" x="30.48" y="17.78"/>
 <element name="U3" library="dr-library" package="SOT-23-6" value="MCP1501-CHY" x="-40.64" y="24.13"/>
 <element name="VREF_EN" library="dr-library" package="1X03" value="M03" x="-30.48" y="35.56"/>
-<element name="Y2" library="dr-library" package="CFPX-217" value="32.768MHz" x="62.865" y="33.655" rot="R270"/>
+<element name="Y2" library="dr-library" package="CFPX-217" value="32.768MHz" x="60.96" y="32.385" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -589,11 +589,11 @@ design rules under a new name.</description>
 <contactref element="D2" pad="C"/>
 <wire x1="58.4" y1="47.66" x2="62.9" y2="45.16" width="0" layer="19" extent="1-1"/>
 <wire x1="62.9" y1="38.16" x2="62.9" y2="45.16" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="28.321" x2="62.9" y2="38.16" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="28.321" x2="62.23" y2="28.321" width="0" layer="19" extent="1-1"/>
 <wire x1="55.9" y1="36.16" x2="62.9" y2="38.16" width="0" layer="19" extent="1-1"/>
 <wire x1="51.4" y1="42.66" x2="55.9" y2="36.16" width="0" layer="19" extent="1-1"/>
-<wire x1="66.929" y1="32.385" x2="55.9" y2="36.16" width="0" layer="19" extent="1-1"/>
-<wire x1="66.929" y1="34.925" x2="66.929" y2="32.385" width="0" layer="19" extent="1-1"/>
-<wire x1="43.66" y1="16.51" x2="66.929" y2="32.385" width="0" layer="19" extent="1-1"/>
+<wire x1="43.66" y1="16.51" x2="55.9" y2="36.16" width="0" layer="19" extent="1-1"/>
 <wire x1="34.925" y1="18.669" x2="43.66" y2="16.51" width="0" layer="19" extent="1-1"/>
 <wire x1="30.48" y1="14.58" x2="34.925" y2="18.669" width="0" layer="19" extent="1-1"/>
 <wire x1="26.035" y1="18.669" x2="30.48" y2="14.58" width="0" layer="19" extent="1-1"/>
@@ -690,15 +690,15 @@ design rules under a new name.</description>
 <contactref element="C10" pad="2"/>
 <contactref element="Y2" pad="2"/>
 <contactref element="U1" pad="31"/>
-<wire x1="62.865" y1="32.455" x2="60.4" y2="36.16" width="0" layer="19" extent="1-1"/>
-<wire x1="65.151" y1="32.385" x2="62.865" y2="32.455" width="0" layer="19" extent="1-1"/>
+<wire x1="59.76" y1="32.385" x2="59.69" y2="30.099" width="0" layer="19" extent="1-1"/>
+<wire x1="60.4" y1="36.16" x2="59.76" y2="32.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="C11" pad="2"/>
 <contactref element="Y2" pad="1"/>
 <contactref element="U1" pad="32"/>
-<wire x1="65.151" y1="34.925" x2="62.865" y2="34.855" width="0" layer="19" extent="1-1"/>
-<wire x1="60.9" y1="36.16" x2="62.865" y2="34.855" width="0" layer="19" extent="1-1"/>
+<wire x1="62.16" y1="32.385" x2="62.23" y2="30.099" width="0" layer="19" extent="1-1"/>
+<wire x1="60.9" y1="36.16" x2="62.16" y2="32.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="C12" pad="1"/>
