@@ -2032,7 +2032,6 @@ http://www.mouser.com/ds/2/149/2N7002-1006482.pdf</description>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="JP10" library="dr-library" deviceset="M02" device=""/>
 <part name="R7" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
-<part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2123,8 +2122,7 @@ http://www.mouser.com/ds/2/149/2N7002-1006482.pdf</description>
 <instance part="+3V15" gate="G$1" x="63.5" y="-35.56"/>
 <instance part="GND21" gate="1" x="63.5" y="-88.9"/>
 <instance part="JP10" gate="G$1" x="-35.56" y="-35.56"/>
-<instance part="R7" gate="G$1" x="45.72" y="-53.34" rot="R90"/>
-<instance part="+3V16" gate="G$1" x="45.72" y="-43.18"/>
+<instance part="R7" gate="G$1" x="58.42" y="-83.82"/>
 </instances>
 <busses>
 </busses>
@@ -2320,7 +2318,10 @@ http://www.mouser.com/ds/2/149/2N7002-1006482.pdf</description>
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="63.5" y1="-81.28" x2="63.5" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-81.28" x2="63.5" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="-83.82" x2="63.5" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="63.5" y="-83.82"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2467,11 +2468,6 @@ http://www.mouser.com/ds/2/149/2N7002-1006482.pdf</description>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="-38.1" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="-48.26" x2="45.72" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="+3V16" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3253,8 +3249,12 @@ http://www.mouser.com/ds/2/149/2N7002-1006482.pdf</description>
 <net name="HEART" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="55.88" y1="-76.2" x2="48.26" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-76.2" x2="53.34" y2="-76.2" width="0.1524" layer="91"/>
 <label x="48.26" y="-76.2" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="-76.2" x2="48.26" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-83.82" x2="53.34" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="53.34" y="-76.2"/>
 </segment>
 <segment>
 <pinref part="JP10" gate="G$1" pin="2"/>
