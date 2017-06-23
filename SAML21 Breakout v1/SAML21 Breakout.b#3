@@ -194,6 +194,25 @@
 <text x="39.6875" y="9.525" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PA21</text>
 <text x="42.2275" y="9.525" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PA23</text>
 <text x="44.7675" y="9.525" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PA25</text>
+<text x="15.5575" y="64.77" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PB3</text>
+<text x="18.0975" y="64.77" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PB1</text>
+<text x="20.6375" y="64.135" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PB31</text>
+<text x="23.1775" y="64.135" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PA31</text>
+<text x="25.7175" y="64.77" size="0.762" layer="21" font="vector" ratio="18" rot="R90">RST</text>
+<text x="28.2575" y="64.135" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PB23</text>
+<text x="28.2575" y="73.025" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PB22</text>
+<text x="25.7175" y="73.025" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PA27</text>
+<text x="23.1775" y="73.025" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PA30</text>
+<text x="20.6375" y="73.025" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PB30</text>
+<text x="18.0975" y="73.025" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PB0</text>
+<text x="15.5575" y="73.025" size="0.762" layer="21" font="vector" ratio="18" rot="R90">PB2</text>
+<text x="8.89" y="65.7225" size="1.016" layer="21" font="vector" ratio="18">3V3</text>
+<text x="48.26" y="9.525" size="1.016" layer="21" font="vector" ratio="18">3V3</text>
+<text x="48.26" y="2.2225" size="1.016" layer="21" font="vector" ratio="18">GND</text>
+<text x="60.0075" y="10.16" size="1.016" layer="21" font="vector" ratio="18" rot="R90">GND</text>
+<text x="60.0075" y="38.1" size="1.016" layer="21" font="vector" ratio="18" rot="R90">GND</text>
+<text x="8.89" y="73.025" size="1.016" layer="21" font="vector" ratio="18">GND</text>
+<text x="52.705" y="10.16" size="1.016" layer="21" font="vector" ratio="18" rot="R90">VCC</text>
 </plain>
 <libraries>
 <library name="dr-library">

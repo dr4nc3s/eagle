@@ -1194,7 +1194,7 @@ design rules under a new name.</description>
 <element name="JP6" library="dr-library" package="1X02-LONG" value="M02LONG" x="6.35" y="10.16" smashed="yes"/>
 <element name="JP7" library="dr-library" package="1X02-LONG" value="M02LONG" x="10.16" y="69.85" smashed="yes" rot="R270"/>
 <element name="Q1" library="dr-library" package="SOT-23-3" value="2N7002" x="58.42" y="16.51" smashed="yes" rot="R180">
-<attribute name="NAME" x="55.8165" y="18.8595" size="1.016" layer="21" font="vector" ratio="20"/>
+<attribute name="NAME" x="56.0705" y="15.8115" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="R6" library="dr-library" package="RES-0603" value="330" x="50.8" y="29.21" smashed="yes" rot="R180">
 <attribute name="NAME" x="47.31" y="28.64" size="1.016" layer="21" font="vector" ratio="20"/>
@@ -1204,10 +1204,10 @@ design rules under a new name.</description>
 </element>
 <element name="JP10" library="dr-library" package="1X02" value="M02" x="49.53" y="15.24" smashed="yes"/>
 <element name="R7" library="dr-library" package="RES-0603" value="10k" x="53.975" y="16.51" smashed="yes" rot="R90">
-<attribute name="NAME" x="53.025" y="13.7175" size="1.016" layer="21" font="vector" ratio="20"/>
+<attribute name="NAME" x="54.545" y="18.1" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="Q2" library="dr-library" package="SOT-23-3" value="2N7002" x="58.42" y="21.59" smashed="yes" rot="R180">
-<attribute name="NAME" x="55.8165" y="23.9395" size="1.016" layer="21" font="vector" ratio="20"/>
+<attribute name="NAME" x="56.0705" y="20.8915" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="R8" library="dr-library" package="RES-0603" value="330" x="50.8" y="26.67" smashed="yes" rot="R180">
 <attribute name="NAME" x="47.31" y="26.1" size="1.016" layer="21" font="vector" ratio="20"/>
@@ -1217,7 +1217,7 @@ design rules under a new name.</description>
 </element>
 <element name="JP11" library="dr-library" package="1X02" value="M02" x="49.53" y="20.32" smashed="yes"/>
 <element name="R9" library="dr-library" package="RES-0603" value="10k" x="53.975" y="21.59" smashed="yes" rot="R90">
-<attribute name="NAME" x="53.025" y="18.7975" size="1.016" layer="21" font="vector" ratio="20"/>
+<attribute name="NAME" x="54.545" y="23.18" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="U$2" library="EmbeddedAdventures 3" package="STAND-OFF-HOLE" value="" x="2.54" y="2.54" smashed="yes"/>
 <element name="U$3" library="EmbeddedAdventures 3" package="STAND-OFF-HOLE" value="" x="2.54" y="73.66" smashed="yes"/>

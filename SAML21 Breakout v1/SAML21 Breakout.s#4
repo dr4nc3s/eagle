@@ -305,22 +305,6 @@
 <text x="-2.54" y="1.27" size="0.762" layer="25" ratio="20">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="0.762" layer="27" ratio="20">&gt;VALUE</text>
 </package>
-<package name="SOT-223-3">
-<smd name="PAD" x="0" y="3.2" dx="3.3" dy="1.6" layer="1"/>
-<smd name="1" x="-2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<smd name="2" x="0" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<smd name="3" x="2.3" y="-3.2" dx="1.2" dy="1.6" layer="1"/>
-<wire x1="-3.35" y1="1.85" x2="3.35" y2="1.85" width="0.08" layer="48"/>
-<wire x1="-3.35" y1="1.85" x2="-3.35" y2="-1.85" width="0.08" layer="48"/>
-<wire x1="-3.35" y1="-1.85" x2="3.35" y2="-1.85" width="0.08" layer="48"/>
-<wire x1="3.35" y1="1.85" x2="3.35" y2="-1.85" width="0.08" layer="48"/>
-<wire x1="-3.1" y1="1.6" x2="-3.1" y2="-1.6" width="0.1" layer="21"/>
-<wire x1="-3.1" y1="-1.6" x2="3.1" y2="-1.6" width="0.1" layer="21"/>
-<wire x1="3.1" y1="-1.6" x2="3.1" y2="1.6" width="0.1" layer="21"/>
-<wire x1="3.1" y1="1.6" x2="-3.1" y2="1.6" width="0.1" layer="21"/>
-<text x="-3.81" y="-2.54" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.27" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
-</package>
 <package name="LED-1206">
 <smd name="A" x="-1.75" y="0" dx="1.5" dy="1.6" layer="1"/>
 <smd name="C" x="1.75" y="0" dx="1.5" dy="1.6" layer="1"/>
@@ -1248,17 +1232,6 @@
 <text x="-3.81" y="3.175" size="1.27" layer="95" font="vector" ratio="20">&gt;NAME</text>
 <text x="-3.81" y="-4.445" size="1.27" layer="95" font="vector" ratio="20">&gt;VALUE</text>
 </symbol>
-<symbol name="AP7361C">
-<pin name="VIN" x="-12.7" y="2.54" visible="pin" length="middle" direction="pwr"/>
-<pin name="VOUT" x="12.7" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND" x="0" y="-10.16" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="6.096" size="1.27" layer="95" font="vector" ratio="20">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.27" layer="96" font="vector" ratio="20">&gt;VALUE</text>
-</symbol>
 <symbol name="LED">
 <pin name="A" x="-2.54" y="0" visible="off" length="short"/>
 <pin name="C" x="5.08" y="0" visible="off" length="short" rot="R180"/>
@@ -1853,28 +1826,6 @@ Manufacturer Part # LFXTAL054236Reel</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AP7361C-33E-13" prefix="U">
-<description>AP7361C-33E-13 
-3.3V Fixed LDO
-Diodes Inc.
-3.3V, 1A output
-Vdrop 360mV @ 1A</description>
-<gates>
-<gate name="G$1" symbol="AP7361C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-223-3">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="1"/>
-<connect gate="G$1" pin="VOUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2529,9 +2480,8 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="C11" library="dr-library" deviceset="CAP" device="0603" value="15pF"/>
 <part name="Y2" library="dr-library" deviceset="LFXTAL054236-R" device="" value="32.768MHz"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="U2" library="dr-library" deviceset="AP7361C-33E-13" device=""/>
-<part name="C12" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
-<part name="C13" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
+<part name="C12" library="dr-library" deviceset="CAP" device="0603" value="10uF"/>
+<part name="C13" library="dr-library" deviceset="CAP" device="0603" value="10uF"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -2654,7 +2604,6 @@ Reset button</text>
 <instance part="C11" gate="G$1" x="182.88" y="63.5" rot="R90"/>
 <instance part="Y2" gate="G$1" x="187.96" y="71.12" rot="R90"/>
 <instance part="GND8" gate="1" x="170.18" y="66.04"/>
-<instance part="U2" gate="G$1" x="86.36" y="228.6"/>
 <instance part="C12" gate="G$1" x="71.12" y="220.98"/>
 <instance part="C13" gate="G$1" x="101.6" y="220.98"/>
 <instance part="P+1" gate="VCC" x="71.12" y="238.76"/>
@@ -2825,19 +2774,6 @@ Reset button</text>
 <wire x1="175.26" y1="71.12" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="71.12" x2="170.18" y2="68.58" width="0.1524" layer="91"/>
 <junction x="175.26" y="71.12"/>
-</segment>
-<segment>
-<pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="218.44" x2="71.12" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="215.9" x2="86.36" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="215.9" x2="101.6" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="215.9" x2="101.6" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="86.36" y1="218.44" x2="86.36" y2="215.9" width="0.1524" layer="91"/>
-<junction x="86.36" y="215.9"/>
-<wire x1="86.36" y1="215.9" x2="86.36" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -3064,7 +3000,6 @@ Reset button</text>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="236.22" x2="101.6" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VOUT"/>
 <wire x1="101.6" y1="231.14" x2="101.6" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="231.14" x2="101.6" y2="231.14" width="0.1524" layer="91"/>
 <junction x="101.6" y="231.14"/>
@@ -3202,7 +3137,6 @@ Reset button</text>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="236.22" x2="71.12" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VIN"/>
 <wire x1="71.12" y1="231.14" x2="71.12" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="231.14" x2="71.12" y2="231.14" width="0.1524" layer="91"/>
 <junction x="71.12" y="231.14"/>

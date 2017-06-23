@@ -2471,8 +2471,8 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
-<part name="R2" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R1" library="dr-library" deviceset="RESISTOR" device="0805" value="10k"/>
+<part name="R2" library="dr-library" deviceset="RESISTOR" device="0805" value="330"/>
 <part name="S1" library="dr-library" deviceset="SKHMQME010" device=""/>
 <part name="C9" library="dr-library" deviceset="CAP" device="0603" value="1uF"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -2485,7 +2485,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R3" library="dr-library" deviceset="RESISTOR" device="0805" value="330"/>
 <part name="D1" library="dr-library" deviceset="LED" device="1206" value="3V3"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="dr-library" deviceset="M50-4910545" device=""/>
@@ -2497,14 +2497,14 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="VREF_EN" library="dr-library" deviceset="M03" device=""/>
-<part name="R4" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R4" library="dr-library" deviceset="RESISTOR" device="0805" value="10k"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="C15" library="dr-library" deviceset="CAP" device="0603" value="4.7uF"/>
 <part name="C16" library="dr-library" deviceset="CAP" device="0603" value="100nF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="dr-library" deviceset="M03" device=""/>
-<part name="R5" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R5" library="dr-library" deviceset="RESISTOR" device="0805" value="330"/>
 <part name="D2" library="dr-library" deviceset="LED" device="1206" value="PWR"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
@@ -2525,19 +2525,19 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="dr-library" deviceset="2N7002" device=""/>
-<part name="R6" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R6" library="dr-library" deviceset="RESISTOR" device="0805" value="330"/>
 <part name="D3" library="dr-library" deviceset="LED" device="1206" value="PWR"/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="JP10" library="dr-library" deviceset="M02" device=""/>
-<part name="R7" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R7" library="dr-library" deviceset="RESISTOR" device="0805" value="10k"/>
 <part name="Q2" library="dr-library" deviceset="2N7002" device=""/>
-<part name="R8" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R8" library="dr-library" deviceset="RESISTOR" device="0805" value="330"/>
 <part name="D4" library="dr-library" deviceset="LED" device="1206" value="PWR"/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="JP11" library="dr-library" deviceset="M02" device=""/>
-<part name="R9" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R9" library="dr-library" deviceset="RESISTOR" device="0805" value="10k"/>
 <part name="J2" library="EmbeddedAdventures 3" deviceset="JACK-PLUG" device="0"/>
 <part name="D5" library="dr-library" deviceset="VS-10BQ030-M3" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
@@ -2549,12 +2549,12 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="U4" library="dr-library" deviceset="TXS-0102-Q1" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="R10" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R10" library="dr-library" deviceset="RESISTOR" device="0805" value="10k"/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="C17" library="dr-library" deviceset="CAP" device="0603" value="100nF"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="USB_EN" library="dr-library" deviceset="M03" device=""/>
-<part name="R11" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R11" library="dr-library" deviceset="RESISTOR" device="0805" value="10k"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="U5" library="dr-library" deviceset="AP7362-33SP-13" device=""/>
 </parts>

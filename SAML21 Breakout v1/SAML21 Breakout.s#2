@@ -2988,8 +2988,18 @@ Reset button</text>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="236.22" x2="106.68" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="231.14" x2="106.68" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="231.14" x2="106.68" y2="231.14" width="0.1524" layer="91"/>
 <junction x="106.68" y="231.14"/>
+<pinref part="U5" gate="G$1" pin="OUT@5"/>
+<wire x1="99.06" y1="231.14" x2="101.6" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="OUT@7"/>
+<wire x1="101.6" y1="231.14" x2="106.68" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="226.06" x2="101.6" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="226.06" x2="101.6" y2="228.6" width="0.1524" layer="91"/>
+<junction x="101.6" y="231.14"/>
+<pinref part="U5" gate="G$1" pin="OUT@6"/>
+<wire x1="101.6" y1="228.6" x2="101.6" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="228.6" x2="101.6" y2="228.6" width="0.1524" layer="91"/>
+<junction x="101.6" y="228.6"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="VCC"/>
@@ -3125,10 +3135,20 @@ Reset button</text>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="236.22" x2="71.12" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="231.14" x2="71.12" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="231.14" x2="71.12" y2="231.14" width="0.1524" layer="91"/>
 <junction x="71.12" y="231.14"/>
 <pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="68.58" y1="231.14" x2="71.12" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="IN@3"/>
+<wire x1="71.12" y1="231.14" x2="76.2" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="IN@4"/>
+<wire x1="76.2" y1="231.14" x2="78.74" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="228.6" x2="76.2" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="228.6" x2="76.2" y2="231.14" width="0.1524" layer="91"/>
+<junction x="76.2" y="231.14"/>
+<pinref part="U5" gate="G$1" pin="EN"/>
+<wire x1="78.74" y1="226.06" x2="76.2" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="226.06" x2="76.2" y2="228.6" width="0.1524" layer="91"/>
+<junction x="76.2" y="228.6"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
