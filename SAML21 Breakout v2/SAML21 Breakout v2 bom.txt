@@ -1,0 +1,29 @@
+Partlist exported from C:/Users/Mobile Me/Documents/GitHub/eagle/SAML21 Breakout v1/SAML21 Breakout.sch at 6/23/2017 11:00 AM
+
+Qty Value            Device           Package         Parts                    Description                               
+1                    INDUCTOR0603     IND-0603        L1                                                                 ===
+1                    JACK-PLUG0       SPC4077         J2                       DC POWER JACK                             ===
+1                    SKHMQME010       SKHMQME010      S1                       ALPS Tactile Switch                       ===
+6   100nF            CAP0603          CAP-0603        C1, C3, C4, C5, C16, C17 Multilayer Ceramic Capacitor              ===
+6   10k              RESISTOR0805     RES-0805        R1, R4, R7, R9, R10, R11                                           ===
+5   10uF             CAP0603          CAP-0603        C6, C7, C8, C12, C13     Multilayer Ceramic Capacitor              ===
+2   15pF             CAP0603          CAP-0603        C10, C11                 Multilayer Ceramic Capacitor              
+3   1uF              CAP0603          CAP-0603        C2, C9, C14              Multilayer Ceramic Capacitor              ===
+2   2N7002           2N7002           SOT-23-3        Q1, Q2                   Fairchild ON Semiconductor                ===
+1   32.768MHz        LFXTAL054236-R   CFPX-217        Y2                       Crystal 32.768MHz                         ===
+5   330              RESISTOR0805     RES-0805        R2, R3, R5, R6, R8                                                 ===
+1   3V3              LED1206          LED-1206        D1                                                                 ===
+1   4.7uF            CAP0603          CAP-0603        C15                      Multilayer Ceramic Capacitor              ===
+1   AP7362-33SP-13   AP7362-33SP-13   SO-8EP          U5                       Diodes Inc.                               ===
+1   AT-SAM-L21-JTQFP AT-SAM-L21-JTQFP TQFP-64         U1                       Atmel/Microchip SAML21 Series, 64-pin     ===
+2   M02              M02              1X02            JP10, JP11                                                         
+5   M02LONG          M02LONG          1X02-LONG       JP4, JP5, JP6, JP7, JP9                                            
+3   M03              M03              1X03            U$1, USB_EN, VREF_EN                                               
+3   M122ROWS         M122ROWS         2X06            JP2, JP3, JP8                                                      
+1   M142ROWS         M142ROWS         2X07            JP1                                                                ===
+1   M50-4910545      M50-4910545      M50-4910545     J1                       Harwin 10-pin Connector                   
+1   MCP1501-CHY      MCP1501-CHY      SOT-23-6        U3                       High Precision Buffered Voltage Reference ===
+1   MOLEX_USBMICRO   MOLEX_USBMICRO   MOLEX_47346-001 U$6                                                                ===
+3   PWR              LED1206          LED-1206        D2, D3, D4                                                         
+1   TXS-0102-Q1      TXS-0102-Q1      VSSOP-8         U4                       Texas Instruments                         ===
+1   VS-10BQ030-M3    VS-10BQ030-M3    DO-214AA        D5                       Vishay Semiconductors                     
