@@ -2795,10 +2795,10 @@ A3216/EIA3216</description>
 <text x="-3" y="-5" size="1.27" layer="27" ratio="20">&gt;VALUE</text>
 </package>
 <package name="TOUCH-9MMX9MM">
-<wire x1="-4.855" y1="4.855" x2="4.855" y2="4.855" width="0.127" layer="48"/>
-<wire x1="-4.855" y1="4.855" x2="-4.855" y2="-4.855" width="0.127" layer="48"/>
+<wire x1="-4.855" y1="4.85" x2="4.855" y2="4.855" width="0.127" layer="48"/>
+<wire x1="-4.855" y1="4.85" x2="-4.855" y2="-4.85" width="0.127" layer="48"/>
 <wire x1="4.855" y1="4.855" x2="4.855" y2="-4.855" width="0.127" layer="48"/>
-<wire x1="-4.855" y1="-4.855" x2="4.855" y2="-4.855" width="0.127" layer="48"/>
+<wire x1="-4.855" y1="-4.85" x2="4.855" y2="-4.855" width="0.127" layer="48"/>
 <text x="-4.945" y="5.045" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-5.18" y="-5.75" size="0.762" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <smd name="P$1" x="0" y="0" dx="8" dy="8" layer="1" roundness="25"/>

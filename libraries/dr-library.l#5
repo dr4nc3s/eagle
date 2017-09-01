@@ -2800,7 +2800,7 @@ A3216/EIA3216</description>
 <wire x1="4.8" y1="4.8" x2="4.8" y2="-4.8" width="0.127" layer="48"/>
 <wire x1="-4.8" y1="-4.8" x2="4.8" y2="-4.8" width="0.127" layer="48"/>
 <text x="-4.945" y="5.045" size="0.762" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-5.18" y="-5.75" size="0.762" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-4.545" y="-5.75" size="0.762" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <smd name="P$1" x="0" y="0" dx="8" dy="8" layer="1" roundness="25"/>
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.127" layer="31"/>
 </package>
