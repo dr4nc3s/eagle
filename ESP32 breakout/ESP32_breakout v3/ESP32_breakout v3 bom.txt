@@ -1,0 +1,26 @@
+Partlist exported from C:/Users/Mobile Me/Documents/GitHub/eagle/ESP32 breakout/ESP32_breakout v2.2/ESP32_breakout v2.2.sch at 6/23/2017 11:27 AM
+
+Qty Value              Device               Package            Parts                                  Description                                             
+1                      JACK-PLUG0           SPC4077            J1                                     DC POWER JACK                 ===                          
+5                      LED1206              LED-1206           D1, D3, D4, D5, D6                                                   ===                          
+2                      PUSHBUTTONSKHMQME010 SKHMQME010         S1, S2                                 ALPS Tactile Switch           ===                          
+5   0.1uF              CAP0603              CAP-0603           C2, C3, C4, C9, C18                    Multilayer Ceramic Capacitor  ===                          
+3   10k                RESISTOR0805         RES-0805           R1, R2, R8                                                            ===                         
+2   10uF               CAP-POLARCASEB-3528  B-3528             C5, C6                                                               ===                          
+1   10uF               CAP0603              CAP-0603           C1                                     Multilayer Ceramic Capacitor  ===                          
+1   12MHz              ABLS-12MHZ-B2-T      HC-49/US           Y1                                     Abracon 12MHz Crystal          ===                         
+2   22pF               CAP0805              CAP-0805           C7, C8                                 Multilayer Ceramic Capacitor  ===                          
+5   330                RESISTOR0805         RES-0805           R3, R4, R5, R6, R7                                                   ===                          
+3   BSS84              BSS84                SOT-23-3           Q1, Q2, Q3                             Fairchild Semiconductor       ===                          
+1   CH340G             CH340G               SOIC16             U$7                                                                  ===                          
+1   ESP-WROOM-32       ESP-WROOM-32         ESP-WROOM-32       U1                                                                   ===                          
+1   JUMPER_2-WAY       JUMPER_2-WAY         1X02               JP6                                                                                            
+2   M02LONG            M02LONG              1X02-LONG          JP4, JP5                                                                                       
+2   M102X05            M102X05              2X05               JP2, JP3                                                                                       
+1   M122ROWS           M122ROWS             2X06               JP1                                                                                            
+1   MOLEX_USBMICRO     MOLEX_USBMICRO       MOLEX_47346-001    U$4                                                                                            
+1   NCP-1117223-3      NCP-1117223-3        SOT-223-3          U2                                     ON Semiconductor Low Dropout Positive Voltage Regulator 
+1   SCHA4B0419         SCHA4B0419           MICROSD_SCHA4B0419 J3                                     ALPS MicroSD Connector                                  
+1   SPDT               SPDT                 1X03               S3                                                                                             
+8   TOUCHPAD-10MMX10MM TOUCHPAD-10MMX10MM   TOUCH-10MMX10MM    C10, C11, C12, C13, C14, C15, C16, C17                                                         
+1   VS-10BQ030-M3      VS-10BQ030-M3        DO-214AA           D2                                     Vishay Semiconductors                                   
