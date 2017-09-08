@@ -2417,6 +2417,12 @@ DIN A3, landscape with extra doc field</description>
 <part name="JP8" library="dr-library" deviceset="JUMPER_2-WAY" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
+<part name="P+2" library="supply1" deviceset="VCC" device=""/>
+<part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="JP9" library="dr-library" deviceset="M02" device="LONG"/>
+<part name="JP10" library="dr-library" deviceset="M02" device="LONG"/>
 </parts>
 <sheets>
 <sheet>
@@ -2541,6 +2547,12 @@ Header</text>
 <instance part="JP8" gate="G$1" x="256.54" y="215.9" rot="R180"/>
 <instance part="+3V8" gate="G$1" x="248.92" y="241.3"/>
 <instance part="+3V9" gate="G$1" x="248.92" y="223.52"/>
+<instance part="P+2" gate="VCC" x="106.68" y="220.98"/>
+<instance part="+3V13" gate="G$1" x="129.54" y="220.98"/>
+<instance part="GND7" gate="1" x="106.68" y="205.74"/>
+<instance part="GND11" gate="1" x="129.54" y="205.74"/>
+<instance part="JP9" gate="G$1" x="114.3" y="213.36" rot="R180"/>
+<instance part="JP10" gate="G$1" x="137.16" y="213.36" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2705,6 +2717,18 @@ Header</text>
 <wire x1="198.12" y1="43.18" x2="200.66" y2="43.18" width="0.1524" layer="91"/>
 <junction x="200.66" y="43.18"/>
 </segment>
+<segment>
+<wire x1="132.08" y1="210.82" x2="129.54" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="129.54" y1="210.82" x2="129.54" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="JP10" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="109.22" y1="210.82" x2="106.68" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="106.68" y1="210.82" x2="106.68" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -2811,6 +2835,12 @@ Header</text>
 <wire x1="248.92" y1="215.9" x2="248.92" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<wire x1="132.08" y1="213.36" x2="129.54" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="+3V13" gate="G$1" pin="+3V3"/>
+<wire x1="129.54" y1="213.36" x2="129.54" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="JP10" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="EN" class="0">
 <segment>
@@ -2869,6 +2899,12 @@ Header</text>
 <wire x1="38.1" y1="231.14" x2="43.18" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="231.14" x2="43.18" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="109.22" y1="213.36" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
+<wire x1="106.68" y1="213.36" x2="106.68" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="TX" class="0">

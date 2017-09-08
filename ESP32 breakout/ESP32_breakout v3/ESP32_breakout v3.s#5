@@ -2999,6 +2999,7 @@ Header</text>
 <segment>
 <pinref part="J3" gate="G$1" pin="DAT0"/>
 <wire x1="193.04" y1="213.36" x2="200.66" y2="213.36" width="0.1524" layer="91"/>
+<label x="195.58" y="213.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IO4/T0" class="0">

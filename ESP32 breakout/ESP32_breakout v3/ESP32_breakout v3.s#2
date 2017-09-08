@@ -266,9 +266,7 @@
 <package name="LED-1206">
 <smd name="A" x="-1.75" y="0" dx="1.5" dy="1.6" layer="1"/>
 <smd name="C" x="1.75" y="0" dx="1.5" dy="1.6" layer="1"/>
-<wire x1="2.1" y1="1" x2="2.7" y2="1" width="0.08" layer="21"/>
-<wire x1="2.7" y1="1" x2="2.7" y2="-1" width="0.08" layer="21"/>
-<wire x1="2.7" y1="-1" x2="2.1" y2="-1" width="0.08" layer="21"/>
+<wire x1="2.794" y1="0.762" x2="2.794" y2="-0.762" width="0.254" layer="21"/>
 <wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.08" layer="48"/>
 <wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.08" layer="48"/>
 <wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.08" layer="48"/>

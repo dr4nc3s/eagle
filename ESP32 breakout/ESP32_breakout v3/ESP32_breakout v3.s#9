@@ -2346,13 +2346,9 @@ DIN A3, landscape with extra doc field</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="D1" library="dr-library" deviceset="LED" device="1206"/>
-<part name="R3" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="dr-library" deviceset="MOLEX_USBMICRO" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
@@ -2425,7 +2421,6 @@ DIN A3, landscape with extra doc field</description>
 <plain>
 <text x="309.88" y="180.34" size="1.778" layer="97" rot="R90">NOTE: Only 8 pads. T8/T9 are connected to
  IO32/IO33, which are unusable</text>
-<text x="223.52" y="25.4" size="1.778" layer="97" font="vector" ratio="20" rot="R90">5VLED</text>
 <text x="238.76" y="25.4" size="1.778" layer="97" font="vector" ratio="20" rot="R90">3V3LED</text>
 <text x="144.78" y="17.78" size="1.778" layer="97" font="vector" ratio="20" rot="R90">HEARTBEAT</text>
 <text x="45.72" y="248.92" size="12.7" layer="94" font="vector" ratio="15">Power</text>
@@ -2470,13 +2465,9 @@ Header</text>
 <instance part="GND5" gate="1" x="91.44" y="132.08"/>
 <instance part="GND1" gate="1" x="53.34" y="22.86"/>
 <instance part="+3V3" gate="G$1" x="53.34" y="63.5"/>
-<instance part="D1" gate="G$1" x="226.06" y="33.02" rot="R270"/>
-<instance part="R3" gate="G$1" x="226.06" y="48.26" rot="R90"/>
 <instance part="+3V4" gate="G$1" x="88.9" y="238.76"/>
 <instance part="GND6" gate="1" x="71.12" y="205.74"/>
 <instance part="P+1" gate="VCC" x="53.34" y="238.76"/>
-<instance part="GND7" gate="1" x="226.06" y="12.7"/>
-<instance part="P+2" gate="VCC" x="226.06" y="63.5"/>
 <instance part="GND8" gate="1" x="60.96" y="104.14"/>
 <instance part="U$4" gate="G$1" x="147.32" y="149.86" rot="R180"/>
 <instance part="P+3" gate="VCC" x="160.02" y="160.02"/>
@@ -2614,11 +2605,6 @@ Header</text>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="C5" gate="G$1" pin="N"/>
 <pinref part="C6" gate="G$1" pin="N"/>
-</segment>
-<segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="226.06" y1="27.94" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -2853,11 +2839,6 @@ Header</text>
 <pinref part="C5" gate="G$1" pin="P"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="60.96" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="U$4" gate="G$1" pin="VDD"/>
 <wire x1="152.4" y1="149.86" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="149.86" x2="160.02" y2="157.48" width="0.1524" layer="91"/>
@@ -2878,13 +2859,6 @@ Header</text>
 <wire x1="38.1" y1="231.14" x2="43.18" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="231.14" x2="43.18" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="226.06" y1="43.18" x2="226.06" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX" class="0">
