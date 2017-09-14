@@ -616,7 +616,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CAPACITOR">
+<deviceset name="CAPACITOR" prefix="C" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
@@ -699,15 +699,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <part name="C1" library="EmbeddedAdventures 3" deviceset="CAP" device="0402-CAP"/>
 <part name="C2" library="EmbeddedAdventures 3" deviceset="CAP" device="0603-CAP"/>
 <part name="C3" library="EmbeddedAdventures 3" deviceset="CAP" device="0805"/>
-<part name="U$1" library="DR_passives" deviceset="CAPACITOR" device="0402"/>
-<part name="U$2" library="DR_passives" deviceset="CAPACITOR" device="0603"/>
-<part name="U$3" library="DR_passives" deviceset="CAPACITOR" device="0805"/>
 <part name="R1" library="EmbeddedAdventures 3" deviceset="RESISTOR" device="0402-RES"/>
 <part name="R2" library="EmbeddedAdventures 3" deviceset="RESISTOR" device="0603-RES"/>
 <part name="R3" library="EmbeddedAdventures 3" deviceset="RESISTOR" device=""/>
 <part name="U$4" library="DR_passives" deviceset="RESISTOR" device="0402"/>
 <part name="U$5" library="DR_passives" deviceset="RESISTOR" device="0402"/>
 <part name="U$6" library="DR_passives" deviceset="RESISTOR" device="0402"/>
+<part name="C4" library="DR_passives" deviceset="CAPACITOR" device="0402"/>
+<part name="C5" library="DR_passives" deviceset="CAPACITOR" device="0402"/>
 </parts>
 <sheets>
 <sheet>
@@ -717,15 +716,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <instance part="C1" gate="G$1" x="0" y="15.24"/>
 <instance part="C2" gate="G$1" x="7.62" y="15.24"/>
 <instance part="C3" gate="G$1" x="15.24" y="15.24"/>
-<instance part="U$1" gate="G$1" x="0" y="0"/>
-<instance part="U$2" gate="G$1" x="17.78" y="0"/>
-<instance part="U$3" gate="G$1" x="35.56" y="0"/>
 <instance part="R1" gate="G$1" x="-2.54" y="-17.78"/>
 <instance part="R2" gate="G$1" x="15.24" y="-17.78"/>
 <instance part="R3" gate="G$1" x="33.02" y="-17.78"/>
 <instance part="U$4" gate="G$1" x="-2.54" y="-30.48"/>
 <instance part="U$5" gate="G$1" x="20.32" y="-30.48"/>
 <instance part="U$6" gate="G$1" x="43.18" y="-30.48"/>
+<instance part="C4" gate="G$1" x="27.94" y="12.7"/>
+<instance part="C5" gate="G$1" x="40.64" y="20.32"/>
 </instances>
 <busses>
 </busses>

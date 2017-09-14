@@ -593,16 +593,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
-<wire x1="-5.08" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<pin name="1" x="0" y="5.08" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="0" y="-5.08" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="3.302" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="0" y="-3.302" visible="off" length="short" direction="pas" rot="R90"/>
 <text x="-7.62" y="2.54" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
 <text x="-7.62" y="-3.81" size="1.27" layer="96" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="0.254" x2="1.905" y2="0.762" layer="94"/>
+<rectangle x1="-1.905" y1="-0.762" x2="1.905" y2="-0.254" layer="94"/>
 </symbol>
 <symbol name="RESISTOR">
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
@@ -654,12 +650,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR">
+<deviceset name="RESISTOR" prefix="R">
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="R0402" package="RES-0402">
+<device name="0402" package="RES-0402">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -668,7 +664,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <technology name=""/>
 </technologies>
 </device>
-<device name="R0603" package="RES-0603">
+<device name="0603" package="RES-0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -677,7 +673,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <technology name=""/>
 </technologies>
 </device>
-<device name="R0805" package="RES-0805">
+<device name="0805" package="RES-0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -709,9 +705,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <part name="R1" library="EmbeddedAdventures 3" deviceset="RESISTOR" device="0402-RES"/>
 <part name="R2" library="EmbeddedAdventures 3" deviceset="RESISTOR" device="0603-RES"/>
 <part name="R3" library="EmbeddedAdventures 3" deviceset="RESISTOR" device=""/>
-<part name="U$4" library="DR_passives" deviceset="RESISTOR" device="R0402"/>
-<part name="U$5" library="DR_passives" deviceset="RESISTOR" device="R0603"/>
-<part name="U$6" library="DR_passives" deviceset="RESISTOR" device="R0805"/>
+<part name="U$4" library="DR_passives" deviceset="RESISTOR" device="0402"/>
+<part name="U$5" library="DR_passives" deviceset="RESISTOR" device="0402"/>
+<part name="U$6" library="DR_passives" deviceset="RESISTOR" device="0402"/>
 </parts>
 <sheets>
 <sheet>

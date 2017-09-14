@@ -682,6 +682,162 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </deviceset>
 </devicesets>
 </library>
+<library name="dr-library">
+<packages>
+<package name="XBEE_S2C_SMD">
+<wire x1="-11" y1="16.89" x2="11" y2="16.89" width="0.5" layer="48"/>
+<wire x1="-11" y1="-16.89" x2="11" y2="-16.89" width="0.5" layer="48"/>
+<wire x1="-11" y1="16.89" x2="-11" y2="-16.89" width="0.5" layer="48"/>
+<wire x1="11" y1="16.89" x2="11" y2="-16.89" width="0.5" layer="48"/>
+<smd name="1" x="-10.745" y="9.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="2" x="-10.745" y="7.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="3" x="-10.745" y="5.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="4" x="-10.745" y="3.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="5" x="-10.745" y="1.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="6" x="-10.745" y="-0.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="7" x="-10.745" y="-2.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="8" x="-10.745" y="-4.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="9" x="-10.745" y="-6.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="10" x="-10.745" y="-8.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="11" x="-10.745" y="-10.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="12" x="-10.745" y="-12.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="13" x="-10.745" y="-14.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="14" x="-7" y="-16.73" dx="1.68" dy="2.84" layer="1" rot="R180"/>
+<smd name="15" x="-5" y="-16.73" dx="1.68" dy="2.84" layer="1" rot="R180"/>
+<smd name="16" x="-3" y="-16.73" dx="1.68" dy="2.84" layer="1" rot="R180"/>
+<smd name="17" x="-1" y="-16.73" dx="1.68" dy="2.84" layer="1" rot="R180"/>
+<smd name="18" x="1" y="-16.73" dx="1.68" dy="2.84" layer="1" rot="R180"/>
+<smd name="19" x="3" y="-16.73" dx="1.68" dy="2.84" layer="1" rot="R180"/>
+<smd name="20" x="5" y="-16.73" dx="1.68" dy="2.84" layer="1" rot="R180"/>
+<smd name="21" x="7" y="-16.73" dx="1.68" dy="2.84" layer="1" rot="R180"/>
+<smd name="34" x="10.745" y="9.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="33" x="10.745" y="7.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="32" x="10.745" y="5.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="31" x="10.745" y="3.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="30" x="10.745" y="1.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="29" x="10.745" y="-0.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="28" x="10.745" y="-2.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="27" x="10.745" y="-4.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="26" x="10.745" y="-6.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="25" x="10.745" y="-8.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="24" x="10.745" y="-10.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="23" x="10.745" y="-12.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="22" x="10.745" y="-14.81" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="35" x="10.745" y="11.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="36" x="10.745" y="13.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<smd name="37" x="10.745" y="15.19" dx="1.68" dy="2.84" layer="1" rot="R90"/>
+<rectangle x1="3" y1="7.62" x2="9.325" y2="9.91" layer="39"/>
+<text x="-11" y="17.5" size="1.27" layer="25" ratio="20">&gt;NAME</text>
+<wire x1="-11" y1="11" x2="-11" y2="17" width="1" layer="21"/>
+<wire x1="-11" y1="17" x2="11" y2="17" width="1" layer="21"/>
+<wire x1="-11" y1="-16.5" x2="-11" y2="-17" width="1" layer="21"/>
+<wire x1="-11" y1="-17" x2="-8.5" y2="-17" width="1" layer="21"/>
+<wire x1="8.5" y1="-17" x2="11" y2="-17" width="1" layer="21"/>
+<wire x1="11" y1="-17" x2="11" y2="-16.5" width="1" layer="21"/>
+<text x="-11.43" y="-20.32" size="1.27" layer="27" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="XBEE_S2C_SMD">
+<wire x1="-20.32" y1="25.4" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="-20.32" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-25.4" x2="-20.32" y2="25.4" width="0.254" layer="94"/>
+<pin name="VCC" x="0" y="27.94" length="short" rot="R270"/>
+<pin name="GND@1" x="-5.08" y="-27.94" length="short" rot="R90"/>
+<pin name="TX/IO13" x="22.86" y="17.78" length="short" rot="R180"/>
+<pin name="RX/CONFIG/IO14" x="22.86" y="15.24" length="short" rot="R180"/>
+<pin name="IO12" x="-22.86" y="-17.78" length="short"/>
+<pin name="RESET" x="-22.86" y="22.86" length="short"/>
+<pin name="RSSIPWM/IO10" x="-22.86" y="-12.7" length="short"/>
+<pin name="PWM1/IO11" x="-22.86" y="-7.62" length="short"/>
+<pin name="DTR/SLEEP_RQ/IO8" x="22.86" y="7.62" length="short" rot="R180"/>
+<pin name="GND@11" x="0" y="-27.94" length="short" rot="R90"/>
+<pin name="SPI_ATTN/BOOT/IO19" x="-22.86" y="2.54" length="short"/>
+<pin name="GND@13" x="2.54" y="-27.94" length="short" rot="R90"/>
+<pin name="SCLK/IO18" x="-22.86" y="12.7" length="short"/>
+<pin name="SS/IO17" x="-22.86" y="5.08" length="short"/>
+<pin name="MOSI/IO16" x="-22.86" y="10.16" length="short"/>
+<pin name="MISO/IO15" x="-22.86" y="7.62" length="short"/>
+<pin name="GND@22" x="-2.54" y="-27.94" length="short" rot="R90"/>
+<pin name="IO4" x="-22.86" y="-5.08" length="short"/>
+<pin name="CTS/IO7" x="22.86" y="10.16" length="short" rot="R180"/>
+<pin name="ON/SLEEP/IO9" x="-22.86" y="-2.54" length="short"/>
+<pin name="VREF" x="-22.86" y="17.78" length="short"/>
+<pin name="ASSOC/IO5" x="-22.86" y="-15.24" length="short"/>
+<pin name="RTS/IO6" x="22.86" y="12.7" length="short" rot="R180"/>
+<pin name="A3/IO3" x="22.86" y="-10.16" length="short" rot="R180"/>
+<pin name="A2/IO2" x="22.86" y="-7.62" length="short" rot="R180"/>
+<pin name="A1/IO1" x="22.86" y="-5.08" length="short" rot="R180"/>
+<pin name="A0/IO0" x="22.86" y="-2.54" length="short" rot="R180"/>
+<pin name="GND@35" x="5.08" y="-27.94" length="short" rot="R90"/>
+<pin name="RF" x="22.86" y="22.86" length="short" rot="R180"/>
+<text x="-20.32" y="25.654" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="-27.178" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="N/C@9" x="22.86" y="-15.24" visible="off" length="short" direction="nc" rot="R180"/>
+<pin name="N/C@18" x="22.86" y="-17.78" visible="off" length="short" direction="nc" rot="R180"/>
+<pin name="N/C@19" x="22.86" y="-20.32" visible="off" length="short" direction="nc" rot="R180"/>
+<pin name="N/C@20" x="22.86" y="-22.86" visible="off" length="short" direction="nc" rot="R180"/>
+<pin name="N/C@21" x="17.78" y="-27.94" visible="off" length="short" direction="nc" rot="R90"/>
+<pin name="N/C@23" x="15.24" y="-27.94" visible="off" length="short" direction="nc" rot="R90"/>
+<pin name="N/C@34" x="12.7" y="-27.94" visible="off" length="short" direction="nc" rot="R90"/>
+<pin name="N/C@37" x="10.16" y="-27.94" visible="off" length="short" direction="nc" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="XBEE_S2C_SMD" prefix="U">
+<gates>
+<gate name="G$1" symbol="XBEE_S2C_SMD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="XBEE_S2C_SMD">
+<connects>
+<connect gate="G$1" pin="A0/IO0" pad="33"/>
+<connect gate="G$1" pin="A1/IO1" pad="32"/>
+<connect gate="G$1" pin="A2/IO2" pad="31"/>
+<connect gate="G$1" pin="A3/IO3" pad="30"/>
+<connect gate="G$1" pin="ASSOC/IO5" pad="28"/>
+<connect gate="G$1" pin="CTS/IO7" pad="25"/>
+<connect gate="G$1" pin="DTR/SLEEP_RQ/IO8" pad="10"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@11" pad="11"/>
+<connect gate="G$1" pin="GND@13" pad="13"/>
+<connect gate="G$1" pin="GND@22" pad="22"/>
+<connect gate="G$1" pin="GND@35" pad="35"/>
+<connect gate="G$1" pin="IO12" pad="5"/>
+<connect gate="G$1" pin="IO4" pad="24"/>
+<connect gate="G$1" pin="MISO/IO15" pad="17"/>
+<connect gate="G$1" pin="MOSI/IO16" pad="16"/>
+<connect gate="G$1" pin="N/C@18" pad="18"/>
+<connect gate="G$1" pin="N/C@19" pad="19"/>
+<connect gate="G$1" pin="N/C@20" pad="20"/>
+<connect gate="G$1" pin="N/C@21" pad="21"/>
+<connect gate="G$1" pin="N/C@23" pad="23"/>
+<connect gate="G$1" pin="N/C@34" pad="34"/>
+<connect gate="G$1" pin="N/C@37" pad="37"/>
+<connect gate="G$1" pin="N/C@9" pad="9"/>
+<connect gate="G$1" pin="ON/SLEEP/IO9" pad="26"/>
+<connect gate="G$1" pin="PWM1/IO11" pad="8"/>
+<connect gate="G$1" pin="RESET" pad="6"/>
+<connect gate="G$1" pin="RF" pad="36"/>
+<connect gate="G$1" pin="RSSIPWM/IO10" pad="7"/>
+<connect gate="G$1" pin="RTS/IO6" pad="29"/>
+<connect gate="G$1" pin="RX/CONFIG/IO14" pad="4"/>
+<connect gate="G$1" pin="SCLK/IO18" pad="14"/>
+<connect gate="G$1" pin="SPI_ATTN/BOOT/IO19" pad="12"/>
+<connect gate="G$1" pin="SS/IO17" pad="15"/>
+<connect gate="G$1" pin="TX/IO13" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+<connect gate="G$1" pin="VREF" pad="27"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -704,6 +860,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <part name="C6" library="DR_passives" deviceset="CAPACITOR" device="0402"/>
 <part name="C7" library="DR_passives" deviceset="CAPACITOR" device="0603"/>
 <part name="C8" library="DR_passives" deviceset="CAPACITOR" device="0805"/>
+<part name="U1" library="dr-library" deviceset="XBEE_S2C_SMD" device="SMD"/>
 </parts>
 <sheets>
 <sheet>
@@ -722,6 +879,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <instance part="C6" gate="G$1" x="0" y="-2.54"/>
 <instance part="C7" gate="G$1" x="7.62" y="-2.54"/>
 <instance part="C8" gate="G$1" x="15.24" y="-2.54"/>
+<instance part="U1" gate="G$1" x="81.28" y="15.24"/>
 </instances>
 <busses>
 </busses>
