@@ -4415,10 +4415,10 @@ A3216/EIA3216</description>
 <pin name="TAB" x="-27.94" y="-10.16" length="short"/>
 </symbol>
 <symbol name="TLC5971-RGE">
-<pin name="IREF" x="-27.94" y="12.7" visible="pin" length="short"/>
+<pin name="IREF" x="-27.94" y="7.62" visible="pin" length="short"/>
 <pin name="VREG" x="-27.94" y="22.86" visible="pin" length="short"/>
 <pin name="VCC" x="-27.94" y="25.4" visible="pin" length="short"/>
-<pin name="GND" x="-27.94" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-27.94" y="-10.16" visible="pin" length="short"/>
 <pin name="SDTI" x="-27.94" y="17.78" visible="pin" length="short"/>
 <pin name="SCKI" x="-27.94" y="15.24" length="short"/>
 <pin name="SDTO" x="-5.08" y="25.4" visible="pin" length="short" rot="R180"/>
@@ -4432,20 +4432,23 @@ A3216/EIA3216</description>
 <pin name="OUTB1" x="-5.08" y="5.08" visible="pin" length="short" rot="R180"/>
 <pin name="OUTG2" x="-5.08" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="OUTB2" x="-5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
-<wire x1="-25.4" y1="27.94" x2="-25.4" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="27.94" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="27.94" x2="-25.4" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="27.94" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="27.94" x2="-25.4" y2="27.94" width="0.254" layer="94"/>
 <text x="-25.4" y="27.94" size="1.27" layer="95" font="vector" ratio="20">&gt;NAME</text>
 <text x="-15.24" y="27.94" size="1.27" layer="96" font="vector" ratio="20">&gt;VALUE</text>
-<pin name="NC@3" x="-20.32" y="-5.08" visible="off" length="point" direction="nc" rot="R90"/>
-<pin name="NC@4" x="-17.78" y="-5.08" visible="off" length="point" direction="nc" rot="R90"/>
-<pin name="NC@14" x="-15.24" y="-5.08" visible="off" length="point" direction="nc" rot="R90"/>
-<pin name="NC@17" x="-12.7" y="-5.08" visible="off" length="point" direction="nc" rot="R90"/>
-<pin name="PTAB@0" x="-27.94" y="7.62" visible="pin" length="short"/>
-<pin name="PTAB@1" x="-27.94" y="5.08" visible="pin" length="short"/>
-<pin name="PTAB@2" x="-27.94" y="2.54" visible="pin" length="short"/>
-<pin name="PTAB@3" x="-27.94" y="0" visible="pin" length="short"/>
+<pin name="NC@3" x="-20.32" y="-12.7" visible="off" length="point" direction="nc" rot="R90"/>
+<pin name="NC@4" x="-17.78" y="-12.7" visible="off" length="point" direction="nc" rot="R90"/>
+<pin name="NC@14" x="-15.24" y="-12.7" visible="off" length="point" direction="nc" rot="R90"/>
+<pin name="NC@17" x="-12.7" y="-12.7" visible="off" length="point" direction="nc" rot="R90"/>
+<pin name="PTAB@0" x="-27.94" y="0" visible="pin" length="short"/>
+<pin name="PTAB@1" x="-27.94" y="-2.54" visible="pin" length="short"/>
+<pin name="PTAB@2" x="-27.94" y="-5.08" visible="pin" length="short"/>
+<pin name="PTAB@3" x="-27.94" y="-7.62" visible="pin" length="short"/>
+<pin name="OUTR3" x="-5.08" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="OUTG3" x="-5.08" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="OUTB3" x="-5.08" y="-10.16" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6816,12 +6819,15 @@ http://www.ti.com/lit/ds/symlink/tlc5971.pdf</description>
 <connect gate="G$1" pin="OUTB0" pad="21"/>
 <connect gate="G$1" pin="OUTB1" pad="24"/>
 <connect gate="G$1" pin="OUTB2" pad="9"/>
+<connect gate="G$1" pin="OUTB3" pad="12"/>
 <connect gate="G$1" pin="OUTG0" pad="20"/>
 <connect gate="G$1" pin="OUTG1" pad="23"/>
 <connect gate="G$1" pin="OUTG2" pad="8"/>
+<connect gate="G$1" pin="OUTG3" pad="11"/>
 <connect gate="G$1" pin="OUTR0" pad="19"/>
 <connect gate="G$1" pin="OUTR1" pad="22"/>
 <connect gate="G$1" pin="OUTR2" pad="7"/>
+<connect gate="G$1" pin="OUTR3" pad="10"/>
 <connect gate="G$1" pin="PTAB@0" pad="P$1"/>
 <connect gate="G$1" pin="PTAB@1" pad="P$2"/>
 <connect gate="G$1" pin="PTAB@2" pad="P$3"/>

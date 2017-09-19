@@ -2450,7 +2450,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="R7" library="dr-library" deviceset="RESISTOR" device="0603" value="330"/>
 <part name="D5" library="dr-library" deviceset="LED" device="1206"/>
 <part name="R15" library="dr-library" deviceset="RESISTOR" device="0603" value="10k"/>
-<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
@@ -2580,7 +2579,6 @@ Header</text>
 <instance part="R7" gate="G$1" x="182.88" y="35.56" rot="R180"/>
 <instance part="D5" gate="G$1" x="193.04" y="35.56"/>
 <instance part="R15" gate="G$1" x="243.84" y="213.36" rot="R180"/>
-<instance part="+3V8" gate="G$1" x="248.92" y="251.46"/>
 <instance part="+3V9" gate="G$1" x="264.16" y="248.92"/>
 <instance part="P+2" gate="VCC" x="106.68" y="220.98"/>
 <instance part="+3V13" gate="G$1" x="129.54" y="220.98"/>
@@ -2861,11 +2859,6 @@ Header</text>
 <wire x1="137.16" y1="55.88" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="251.46" y1="243.84" x2="248.92" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="243.84" x2="248.92" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="+3V8" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <wire x1="261.62" y1="233.68" x2="264.16" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="233.68" x2="264.16" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
@@ -2873,6 +2866,7 @@ Header</text>
 <wire x1="261.62" y1="218.44" x2="264.16" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="218.44" x2="264.16" y2="233.68" width="0.1524" layer="91"/>
 <junction x="264.16" y="233.68"/>
+<pinref part="JP11" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="213.36" x2="129.54" y2="213.36" width="0.1524" layer="91"/>
@@ -3575,8 +3569,8 @@ Header</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="228.6" x2="251.46" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="JP11" gate="G$1" pin="3"/>
+<wire x1="251.46" y1="228.6" x2="248.92" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">

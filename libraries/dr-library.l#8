@@ -6797,6 +6797,48 @@ http://www.ti.com/lit/ds/symlink/tlc5971.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TLC5971-RGE" prefix="U">
+<description>TLC5971 12-Channel, 16-Bit, Enhanced Spectrum, PWM, RGB, LED Driver With 3.3-V Linear Regulator 
+Package - VQFN24 4.00mm x 4.00mm
+http://www.ti.com/lit/ds/symlink/tlc5971.pdf</description>
+<gates>
+<gate name="G$1" symbol="TLC5971-RGE" x="15.24" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="VQFN-24">
+<connects>
+<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="IREF" pad="16"/>
+<connect gate="G$1" pin="NC@14" pad="14"/>
+<connect gate="G$1" pin="NC@17" pad="17"/>
+<connect gate="G$1" pin="NC@3" pad="3"/>
+<connect gate="G$1" pin="NC@4" pad="4"/>
+<connect gate="G$1" pin="OUTB0" pad="21"/>
+<connect gate="G$1" pin="OUTB1" pad="24"/>
+<connect gate="G$1" pin="OUTB2" pad="9"/>
+<connect gate="G$1" pin="OUTG0" pad="20"/>
+<connect gate="G$1" pin="OUTG1" pad="23"/>
+<connect gate="G$1" pin="OUTG2" pad="8"/>
+<connect gate="G$1" pin="OUTR0" pad="19"/>
+<connect gate="G$1" pin="OUTR1" pad="22"/>
+<connect gate="G$1" pin="OUTR2" pad="7"/>
+<connect gate="G$1" pin="PTAB@0" pad="P$1"/>
+<connect gate="G$1" pin="PTAB@1" pad="P$2"/>
+<connect gate="G$1" pin="PTAB@2" pad="P$3"/>
+<connect gate="G$1" pin="PTAB@3" pad="P$4"/>
+<connect gate="G$1" pin="SCKI" pad="2"/>
+<connect gate="G$1" pin="SCKO" pad="5"/>
+<connect gate="G$1" pin="SDTI" pad="1"/>
+<connect gate="G$1" pin="SDTO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="13"/>
+<connect gate="G$1" pin="VREG" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
