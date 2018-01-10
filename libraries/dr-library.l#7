@@ -2891,6 +2891,14 @@ A3216/EIA3216</description>
 <wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="48"/>
 <wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.127" layer="48"/>
 <wire x1="5.08" y1="1.27" x2="-5.08" y2="1.27" width="0.127" layer="48"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="0" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<text x="-5.08" y="3.81" size="1.27" layer="25" ratio="15">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="27" ratio="15">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
